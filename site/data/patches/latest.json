@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "version": "6.11.1",
+  "baseVersion": "6.11",
+  "title": "Stadium",
+  "reviewedAt": "2026-10-15",
+  "revision": "07367c341fe928763da2b565c2eee010433e4fc1",
+  "image": "assets/presentation/patch-stadium.jpg",
+  "description": "Novos Pokémon, partidas em dupla e mudanças para repensar sua equipe. Conheça o Stadium e os ajustes da versão 6.11.1.",
+  "highlights": [
+    {"title":"Agora, em dupla","text":"O modo Double Up reúne quatro duplas. Ele não altera o Elo dos jogadores e acompanha o evento mensal Poképals."},
+    {"title":"Mais uma estrela","text":"O item brilhante Star Piece concede uma estrela extra ao portador. As habilidades receberam patamares adicionais de poder."},
+    {"title":"Novas escolhas para sua equipe","text":"Inseto 8 passa a conceder quatro cópias e um Bug Nest. Presa de Navalha passa a aplicar quebra de armadura em todos os ataques, com poder crítico reduzido para 50%."},
+    {"title":"Sua partida, em replay","text":"O gadget Recorder é desbloqueado no nível 10 e permite gravar, assistir e salvar partidas. A wiki também ganhou um glossário de termos e mecânicas."}
+  ],
+  "newcomers": ["PASSIMIAN","ORICORIO_BAILE","ORICORIO_POMPOM","ORICORIO_PA_U","ORICORIO_SENSU","GALAR_MEOWTH","PERRSERKER","PIKACHU_LIBRE"],
+  "balance": [
+    {"name":"Gyarados","change":"Defesa: 9 → 6. Defesa especial: 2 → 5. Apenas na luta PvE da etapa 9: −50 de Poder de Habilidade."},
+    {"name":"Porygon e evoluções","change":"Defesa e defesa especial: 12/16/16 → 8/12/12."},
+    {"name":"Phanpy e evolução","change":"Ataque: 5/10 → 6/14. PV: 80/180 → 80/200."},
+    {"name":"Rufflet e Taillow, com evoluções","change":"PP máximo: 100 → 80."},
+    {"name":"Basculin azul e vermelho","change":"Defesa: 4 → 6. Defesa especial: 3 → 5."},
+    {"name":"Jigglypuff e evoluções","change":"PP máximo: 90 → 100."},
+    {"name":"Chimecho e pré-evolução","change":"PP máximo: 80 → 75."},
+    {"name":"Unown D","change":"Deixa as etapas 1–19 e passa a aparecer a partir da etapa 20."}
+  ],
+  "doubleUp": [
+    "O fragmento de fogo passa a custar menos PV no Double Up.",
+    "A passiva Time Travel de Celebi foi adaptada para Double Up e funciona apenas uma vez por luta.",
+    "A troca do ovo dourado no Double Up recebe mais três turnos de recarga."
+  ],
+  "fixes": [
+    "Corrigida a conversão de escudo de Dragon Rage, inclusive quando Gyarados conjura novamente antes do fim do efeito.",
+    "Corrigido o dano de Precipice Blades e adicionado um quinto patamar de melhoria.",
+    "Pikachu Libre pode ser vendido por três de ouro.",
+    "Smeargle deixa de copiar habilidades que não deveria.",
+    "Dados Viciados + Presa de Navalha passam a aplicar quebra de armadura nos alvos secundários corretamente.",
+    "A ilusão de Zoroark deixa de acionar evoluções por contagem como se fosse um Ditto.",
+    "Corrigida a perda de itens ao combinar Substitute com bilhetes do Dojo.",
+    "Pokémon regionais voltam a brilhar corretamente na loja, que também recebe um indicador de pool para escolhas adicionais.",
+    "Corrigidas as dicas de detalhes do jogador que ficavam escondidas atrás da loja.",
+    "A barra volta a atualizar corretamente quando o PP máximo muda durante a luta."
+  ],
+  "sources": [
+    {"label":"Notas completas do 6.11","url":"https://github.com/keldaanCommunity/pokemonAutoChess/blob/07367c341fe928763da2b565c2eee010433e4fc1/app/public/dist/client/changelog/patch-6.11.md"},
+    {"label":"Notas completas do 6.11.1","url":"https://github.com/keldaanCommunity/pokemonAutoChess/blob/07367c341fe928763da2b565c2eee010433e4fc1/app/public/dist/client/changelog/patch-6.11.1.md"}
+  ],
+  "credit":"Imagem banner2.jpg fornecida pelo proprietário. Pokémon Auto Chess; Pokémon e recursos associados pertencem aos respectivos titulares."
+}

@@ -1,0 +1,13 @@
+node_modules/
+.cache/
+.firecrawl/
+.env
+.env.*
+!.env.example
+data/staging/
+site/data/releases/
+site/data/current.json
+site/assets/pac/*/
+*.tmp
+extension/dist/
+site/downloads/*.zip

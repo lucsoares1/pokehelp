@@ -1,0 +1,22 @@
+/* The game owns .planned and updates it for every shop offer. No input interception. */
+html[data-pch-shop="active"]:not([data-pch-shop-native]) .game-pokemons-store .game-pokemon-portrait.planned:not(.empty){
+  position:relative;outline:3px solid #f5cb54;outline-offset:2px;
+}
+html[data-pch-shop="active"]:not([data-pch-shop-native]) .game-pokemons-store .game-pokemon-portrait.planned:not(.empty)::after{
+  content:"";position:absolute;left:-8px;top:-11px;width:36px;height:41px;
+  z-index:2;pointer-events:none;
+  background-image:var(--pch-buy-logo),var(--pch-buy-badge);
+  background-position:center 42%,center;
+  background-size:53% auto,contain;background-repeat:no-repeat;
+  filter:drop-shadow(0 3px 2px #0009);
+}
+html[data-pch-shop="active"] .game-pokemons-store .game-pokemon-portrait-planned-icon{visibility:hidden}
+@media(max-width:700px){html[data-pch-shop="active"]:not([data-pch-shop-native]) .game-pokemons-store .game-pokemon-portrait.planned:not(.empty)::after{width:30px;height:34px;left:-6px;top:-9px}}
+.game-choice .my-box.pch-item-choice{outline:1px solid #b8c7da;outline-offset:3px;position:relative}
+.game-choice .my-box.pch-item-choice-best{outline:3px solid #f5cb54}
+.game-choice .pch-item-choice-note{display:block;max-width:240px;margin:6px auto 0;padding:5px 8px;border-radius:6px;background:#d7e1ed;color:#211a07;font:700 12px/1.35 Arial,sans-serif;pointer-events:none}
+.game-choice .pch-item-choice-best .pch-item-choice-note{background:#f5cb54;font-weight:800}
+.game-pokemons-store .game-pokemon-portrait.pch-shop-target:not(.empty){position:relative;outline:3px solid #f5cb54;outline-offset:2px}
+.game-pokemons-store .game-pokemon-portrait.pch-shop-target:not(.empty)::after{content:"";position:absolute;left:-8px;top:-11px;width:36px;height:41px;z-index:2;pointer-events:none;background-image:var(--pch-native-buy-logo),var(--pch-native-buy-badge);background-position:center 42%,center;background-size:53% auto,contain;background-repeat:no-repeat;filter:drop-shadow(0 3px 2px #0009)}
+.game-pokemons-store .pch-shop-target .game-pokemon-portrait-planned-icon{visibility:hidden}
+@media(max-width:700px){.game-pokemons-store .game-pokemon-portrait.pch-shop-target:not(.empty)::after{width:30px;height:34px;left:-6px;top:-9px}}

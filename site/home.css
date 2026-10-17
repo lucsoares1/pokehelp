@@ -1,0 +1,48 @@
+:root{--trainer-banner:linear-gradient(115deg,#b10d33 0%,#d73145 52%,#cf3763 100%);--trainer-texture:url('assets/presentation/banner-pattern.svg')}
+/* Home: a bright trainer portal, with one gradient banner and real character artwork. */
+body.is-home .page-layout{display:block;max-width:1740px;margin-right:auto}
+body.is-home .advertisement-column{display:none}
+.home-welcome{position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;align-items:stretch;min-height:440px;padding:0;background:var(--trainer-banner);border:0;border-radius:16px;overflow:clip;color:#fff;scroll-margin-top:128px}
+.home-welcome:before{content:'';position:absolute;z-index:-1;inset:0;background:var(--trainer-texture) left top/640px 554px repeat;pointer-events:none}
+.welcome-copy{position:relative;z-index:1;min-width:0;align-self:center;padding:46px 68px 46px clamp(96px,11vw,192px);animation:welcome-in .35s ease-out}
+.welcome-greeting{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:800;color:#fff;margin:0 0 22px}
+.welcome-greeting img{display:none}
+.welcome-copy h1{font:900 50px/1.13 var(--font-ui);letter-spacing:-.035em;margin:0 0 22px;text-wrap:balance;color:#fff}
+.welcome-copy h1 em{font-style:normal;color:#fff}
+.welcome-description{font-size:16px;line-height:26px;font-weight:600;max-width:43ch;margin:0 0 28px;color:#fff;text-wrap:pretty}
+.welcome-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.welcome-actions a{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:46px;border-radius:24px;padding:12px 20px;font-size:13px;font-weight:900;transition:transform .18s ease-out,background .18s ease-out}
+.welcome-primary{background:#fff;color:#ac1133}
+.welcome-primary:hover{background:#fff4d4;transform:translateY(-2px)}
+.welcome-secondary{border:1px solid #ffffffaa;background:transparent;color:#fff}
+.welcome-secondary:hover{background:#ffffff16;transform:translateY(-2px)}
+.welcome-note{font-size:12px;line-height:20px;color:#fff;margin:16px 0 0}
+.welcome-copy .data-status{font-size:10px;line-height:18px;color:#fff;margin:24px 0 0;font-weight:600}
+.home-start{padding-top:28px}
+.home-start-heading{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:16px}
+.home-start-heading h2{font-size:18px;font-weight:900;letter-spacing:-.02em;margin:0;color:var(--text)}
+.home-start-heading>span{font-size:12px;color:var(--muted)}
+.home-paths{display:flex;gap:14px}
+.home-path{display:flex;align-items:center;flex:1;min-width:0;gap:12px;padding:16px 18px;border:1px solid var(--line);background:var(--surface);border-radius:12px;transition:transform .18s ease-out,border-color .18s ease-out}
+.home-path:hover{transform:translateY(-3px);border-color:#c42c4c}
+.home-path-art{width:42px;height:42px;display:grid;place-items:center;flex:none}
+.home-path-art img{width:40px;height:40px;object-fit:contain}
+.home-path>span:nth-child(2){min-width:0}
+.home-path b{display:block;font-size:13px;font-weight:900;color:var(--text)}
+.home-path small{display:block;font-size:11px;line-height:18px;color:var(--muted);margin-top:3px}
+.home-path-arrow{margin-left:auto;flex:none;color:#c51e42;font-size:20px;font-weight:800}
+body.is-home .champions-section{margin-top:46px}
+body.is-home .compositions-section{margin-top:48px}
+body.is-home .champion-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+@keyframes welcome-in{from{opacity:.5;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+/* Full-bleed local video with the angled boundary requested for the banner. */
+.welcome-video{position:relative;min-width:0;margin-left:-44px;clip-path:polygon(0 0,100% 0,100% 100%,44px 100%);background:#070a10;isolation:isolate}
+.welcome-video-frame{position:absolute;inset:0;background:#070a10}
+.welcome-video-frame video{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.video-loading{position:absolute;inset:0;display:grid;place-items:center;padding:24px;margin:0;background:#101722;color:#c4cee0;font-size:12px;pointer-events:none}
+.video-start{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:12px 20px;border:1px solid #ffffff80;border-radius:24px;background:#11141de8;color:#fff;font-weight:800;z-index:2}
+.video-status{position:absolute;inset:auto 16px 64px 58px;background:#11141de8;color:#fff;font-size:11px;line-height:18px;border-radius:6px;margin:0;padding:10px 12px;z-index:2}
+@media(max-width:1200px){.welcome-copy{padding:36px 50px 36px 76px}.welcome-copy h1{font-size:42px}.welcome-description{font-size:14px;line-height:24px}.welcome-actions a{font-size:12px;padding:11px 16px;gap:12px}.home-path{padding:14px 12px;gap:10px}.home-path small{font-size:10px}}
+@media(max-width:950px){.home-welcome{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.welcome-copy{padding:30px 42px 30px 42px}.welcome-copy h1{font-size:36px}.welcome-description{font-size:13px;line-height:22px}.welcome-video{margin-left:-28px;clip-path:polygon(0 0,100% 0,100% 100%,28px 100%)}.home-paths{gap:10px;flex-wrap:wrap}.home-path{flex-basis:calc(50% - 10px)}.home-start-heading>span{display:none}}
+@media(max-width:699px){.home-welcome{grid-template-columns:1fr;border-radius:14px;min-height:0;scroll-margin-top:90px}.welcome-copy{padding:28px 22px 42px}.welcome-greeting{font-size:11px;margin-bottom:18px}.welcome-copy h1{font-size:36px;line-height:1.14;margin-bottom:18px}.welcome-description{font-size:14px;line-height:24px;margin-bottom:22px}.welcome-actions a{flex:1 1 100%;min-height:44px;font-size:12px}.welcome-note{font-size:11px;line-height:18px}.welcome-copy .data-status{font-size:9px;margin-top:16px}.welcome-video{margin:-20px 0 0;aspect-ratio:16/10;clip-path:polygon(0 20px,100% 0,100% 100%,0 100%)}.video-status{left:12px;right:12px}.home-paths{display:flex;flex-direction:column;gap:10px}.home-path{padding:15px}.home-path small{font-size:11px}body.is-home .champion-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}body.is-home .champions-section{margin-top:36px}}
+@media(prefers-reduced-motion:reduce){.welcome-copy{animation:none}.welcome-actions a,.home-path{transition:none}.welcome-actions a:hover,.home-path:hover{transform:none}}

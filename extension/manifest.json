@@ -1,0 +1,85 @@
+{
+  "manifest_version": 3,
+  "name": "PokeChess Helper — Overlay",
+  "description": "Composição e guia com destaques de Pokémon, itens do carrossel e receitas da reserva.",
+  "version": "0.18.0",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://pokemon-auto-chess.com/*"
+  ],
+  "background": {
+    "service_worker": "background.mjs",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "PokeChess Helper — reabrir overlay no jogo"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://pokemon-auto-chess.com/*"
+      ],
+      "js": [
+        "game-ui.js",
+        "shop-planner.js",
+        "item-assist.js",
+        "game.js"
+      ],
+      "css": [
+        "shop.css"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
+    },
+    {
+      "matches": [
+        "http://127.0.0.1/*",
+        "http://localhost/*"
+      ],
+      "include_globs": [
+        "http://127.0.0.1:4173/*",
+        "http://localhost:4173/*"
+      ],
+      "js": [
+        "helper-bridge.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": false
+    },
+    {
+      "matches": [
+        "https://pokemon-auto-chess.com/*"
+      ],
+      "js": [
+        "planner-notify.js",
+        "items-native.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false,
+      "world": "MAIN"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "overlay/*",
+        "assets/shop-buy.svg",
+        "item-model.mjs",
+        "portal-model.mjs",
+        "holder-model.mjs",
+        "choice-model.mjs",
+        "wand-model.mjs",
+        "shop-read-model.mjs",
+        "overlay/lib/composition-model.mjs"
+      ],
+      "matches": [
+        "https://pokemon-auto-chess.com/*"
+      ]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; frame-ancestors https://pokemon-auto-chess.com"
+  }
+}

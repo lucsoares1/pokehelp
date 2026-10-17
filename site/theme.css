@@ -1,0 +1,155 @@
+@font-face{font-family:Nunito;src:url('assets/fonts/nunito-latin.woff2') format('woff2');font-weight:400 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Nunito;src:url('assets/fonts/nunito-latin-ext.woff2') format('woff2');font-weight:400 900;font-style:normal;font-display:swap;unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{
+  color-scheme:dark;
+  --font-ui:Nunito,'Trebuchet MS',sans-serif;
+  --page:#11141d;--top:#151923;--surface:#1b2030;--surface-raised:#282f42;
+  --hover-surface:#343e54;--line:#374156;--control-border:#56617a;
+  --text:#f1f4fb;--muted:#b5c0d5;--accent:#ff91a8;--accent-soft:#402537;
+  --gold:#f4ca6c;--gold-bright:#ffe09b;--badge-gold:#f2bf43;
+  --brand-filter:none;--icon-filter:brightness(0) invert(.85);
+  --label-bg:#131720e8;--label-text:#fff;--selected:#393426;
+}
+:root[data-theme=light]{
+  color-scheme:light;
+  --page:#f4f6fb;--top:#eff2f8;--surface:#fff;--surface-raised:#edf1f7;
+  --hover-surface:#e2e8f2;--line:#d8e0ec;--control-border:#a6b2c6;
+  --text:#28344e;--muted:#596982;--accent:#b7193c;--accent-soft:#f9e9ee;
+  --gold:#855800;--gold-bright:#684400;
+  --brand-filter:brightness(0) saturate(100%);--icon-filter:brightness(0) opacity(.65);
+  --label-bg:#ffffffed;--label-text:#28344e;--selected:#fff2d3;
+}
+body,button,input,select{font-family:var(--font-ui)}
+.section-heading h2,.team-identity h2,.entity-dialog h2,.helper-brand,.helper-mobile-brand{font-family:var(--font-ui);font-weight:900;text-transform:none}
+.section-heading h2{letter-spacing:-.025em;font-size:28px;line-height:36px}
+.helper-brand{font-size:17px;letter-spacing:-.035em}
+.helper-brand small{font-family:var(--font-ui);font-weight:900}
+body{background:var(--page);color:var(--text)}
+body :is(.top-bar,.sidebar,.mobile-header){background:var(--surface);border-color:var(--line);color:var(--text)}
+body :is(.brand,.gamebase-link,.mobile-brand) .brand-logo{filter:var(--brand-filter)}
+body .helper-brand small,body .helper-mobile-brand small{color:var(--accent)}
+body .gamebase-link{border-color:var(--line);color:var(--muted)}
+body .game-link{color:var(--muted);font-size:13px;font-weight:800}
+body .game-link>img{filter:var(--icon-filter)}
+body .game-link:hover{background:var(--accent-soft);color:var(--accent)}
+body .game-link.active{background:#c71e42;color:#fff}
+body .game-link.active>img{filter:brightness(0) invert(1)}
+body .side-link{color:var(--muted)}
+body .side-link.current,body .side-link:hover{background:var(--accent-soft);color:var(--accent)}
+body .toolbar{background:var(--top);border-color:var(--line)}
+body .page-search{background:var(--surface);border:1px solid var(--line)}
+body .page-search input{color:var(--text)}
+body .page-search input::placeholder{color:var(--muted)}
+body .download-app{background:#c71e42;color:#fff;border-radius:18px;font-size:12px}
+body .sign-in{background:var(--surface);color:var(--text);font-size:12px;border-radius:18px}
+body .icon-button{background:var(--surface-raised);color:var(--text)}
+body .toolbar .icon-button img{filter:var(--icon-filter)}
+body .hamburger{color:var(--text)}
+body .sidebar-toggle{color:var(--muted)}
+body .section-heading h2{color:var(--text);margin-bottom:10px}
+body .section-heading h2 span{color:var(--accent)}
+body .section-heading p{color:var(--muted);font-size:14px}
+body .gold-link{color:var(--accent);font-size:12px;font-weight:900}
+body .source-note{color:var(--muted)}
+body .catalog-toolbar label{color:var(--muted);font-weight:700}
+body select{font-family:var(--font-ui);background:var(--surface);border-color:var(--control-border);color:var(--text);font-weight:700}
+body .footer{background:var(--surface);color:var(--muted);border:1px solid var(--line);border-radius:12px}
+body .footer-group h3{color:var(--text)}
+body .composition{color:var(--text)}
+body .champion-grid{gap:20px}
+body .show-more{background:#c71e42;color:#fff;border-radius:22px;font-family:var(--font-ui);text-transform:none}
+/* Compact collector cards: metallic sleeve, energy artwork window, game data. */
+.champion-card.pokemon-card{position:relative;display:block;height:auto;min-height:0;padding:5px;border:0;border-radius:14px;background:linear-gradient(125deg,#e5d5a1 0%,#766447 15%,#b0a688 30%,#eee3bf 49%,#726448 67%,#d8c28b 87%,#9b8051 100%);color:var(--text);isolation:isolate;overflow:hidden;box-shadow:0 2px 4px #0005;transition:transform .2s ease-out}
+.champion-card.pokemon-card:hover{transform:translateY(-3px)}
+.dex-card-shell{position:relative;overflow:hidden;border-radius:10px;background:color-mix(in srgb,var(--card-energy) 5%,var(--surface));box-shadow:inset 0 0 0 1px #ffffff25}
+.dex-card-shell:after{content:'';position:absolute;inset:0;z-index:4;pointer-events:none;background:linear-gradient(115deg,transparent 30%,#fff3 48%,transparent 65%);opacity:0;transform:translateX(-70%);transition:transform .45s ease-out,opacity .2s}
+.pokemon-card:is(:hover,:focus-visible) .dex-card-shell:after{opacity:.55;transform:translateX(70%)}
+.dex-card-top{display:flex;align-items:center;gap:8px;height:38px;padding:0 9px 0 12px;background:linear-gradient(100deg,color-mix(in srgb,var(--card-energy) 17%,var(--surface)),var(--surface));border-bottom:1px solid #d5c59b80}
+.dex-card-top h3{flex:1;min-width:0;font:900 17px/23px var(--font-ui);letter-spacing:-.025em;color:var(--text);margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dex-stars{flex:none;font-size:12px;line-height:16px;color:var(--gold);letter-spacing:0}
+.dex-energy{display:grid;place-items:center;flex:none;width:26px;height:26px;border-radius:50%;background:linear-gradient(145deg,#f8efd6,#9e895f);box-shadow:inset 0 0 0 1px #fff8,0 1px 2px #0006}
+.dex-energy img{width:19px;height:19px;object-fit:contain}
+.dex-art-stage{position:relative;isolation:isolate;display:flex;justify-content:center;align-items:center;height:136px;margin:0 7px;overflow:hidden;border:1px solid #e3d1a566;border-top:0;background:radial-gradient(ellipse at 45% 65%,color-mix(in srgb,var(--card-energy) 64%,#304253),transparent 75%),conic-gradient(from 210deg at 50% 120%,#111e2a 0deg,color-mix(in srgb,var(--card-energy) 38%,#152538) 50deg,#203146 95deg,color-mix(in srgb,var(--card-energy) 50%,#152538) 140deg,#111e2a 180deg);box-shadow:inset 0 0 0 2px #0b142340}
+.dex-art-stage:before{content:'';position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(135deg,#ffffff12,transparent 36%,transparent 70%,#ffffff10);border-radius:0}
+.dex-energy-watermark{position:absolute;right:-12px;bottom:-16px;width:106px;height:106px;opacity:.1;filter:grayscale(1) brightness(2);transform:rotate(-16deg);z-index:-1}
+.dex-art{position:relative;width:82%;height:132px;object-fit:contain;image-rendering:auto;filter:drop-shadow(0 3px 2px #08122280);transition:transform .2s ease-out}
+.dex-art.is-portrait{width:120px;height:120px;border-radius:3px;object-fit:cover;image-rendering:pixelated;border:3px solid color-mix(in srgb,var(--card-energy) 35%,#d2c399);box-shadow:0 2px 3px #08122290;filter:none}
+.pokemon-card:is(:hover,:focus-visible) .dex-art{transform:translateY(-2px) scale(1.035)}
+.dex-card-code{position:absolute;bottom:5px;left:7px;color:#e8eff7;font-size:8px;line-height:12px;letter-spacing:.04em;font-weight:800;text-shadow:0 1px 2px #000}
+.dex-card-info{padding:9px 12px 10px}
+.dex-card-meta{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:16px}
+.dex-rarity{display:flex;gap:5px;align-items:center;font-size:10px;line-height:14px;font-weight:800;color:var(--muted)}
+.dex-rarity i{width:7px;height:7px;transform:rotate(45deg);border:1px solid #ffffff40;background:var(--rarity)}
+.dex-range{font-size:9px;line-height:14px;font-weight:800;color:var(--muted);white-space:nowrap}
+.dex-types{display:flex;align-items:center;gap:4px 9px;flex-wrap:wrap;margin-top:5px;min-height:20px}
+.dex-types>span{display:flex;align-items:center;gap:4px;font-size:10px;line-height:15px;font-weight:800;color:var(--text)}
+.dex-types img{width:14px;height:14px;object-fit:contain}
+.dex-equipment{display:flex;align-items:center;gap:7px;margin-top:8px;padding-top:8px;border-top:1px solid color-mix(in srgb,var(--card-energy) 20%,var(--line))}
+.dex-equipment>span:first-child{font-size:10px;line-height:13px;font-weight:700;color:var(--muted);margin-right:auto}
+.dex-equipment>div{display:flex;gap:4px;align-items:center}
+.dex-equipment>div>span{display:flex;padding:2px;border-radius:4px;background:var(--surface-raised);box-shadow:inset 0 0 0 1px var(--line)}
+.dex-equipment img{width:22px;height:22px;object-fit:contain;image-rendering:pixelated}
+.dex-equipment small{font-size:10px;color:var(--muted)}
+.dex-card-open{display:flex;flex:none;width:15px;height:15px;color:var(--muted)}
+.dex-card-open .ui-icon{width:15px;height:15px}
+.pokemon-card:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+:root[data-theme=light] .dex-art-stage{background:radial-gradient(ellipse at 40% 55%,color-mix(in srgb,var(--card-energy) 32%,white),transparent 72%),conic-gradient(from 210deg at 50% 120%,#e7e9ed 0deg,var(--card-energy) 50deg,#e5ebf1 95deg,color-mix(in srgb,var(--card-energy) 60%,white) 140deg,#e7e9ed 180deg)}
+:root[data-theme=light] .dex-card-code{color:#25344b;text-shadow:0 1px 2px #fff8}
+:root[data-theme=light] .dex-energy-watermark{filter:grayscale(1);opacity:.1}
+@media(max-width:1100px){.dex-card-top{padding-left:9px;gap:5px}.dex-card-top h3{font-size:15px}.dex-card-info{padding-left:9px;padding-right:9px}.dex-types{gap:4px 7px}.dex-range{font-size:8px}.dex-equipment{gap:5px}.dex-equipment>span:first-child{font-size:9px}.dex-equipment img{width:20px;height:20px}}
+@media(max-width:699px){body .champion-grid{gap:12px}.champion-card.pokemon-card{padding:4px;border-radius:12px}.dex-card-shell{border-radius:8px}.dex-card-top{height:32px;gap:4px;padding:0 6px}.dex-card-top h3{font-size:14px;line-height:20px}.dex-energy{width:20px;height:20px}.dex-energy img{width:15px;height:15px}.dex-stars{font-size:10px}.dex-art-stage{height:108px;margin:0 4px}.dex-art{height:105px;width:94%}.dex-art.is-portrait{width:96px;height:96px;border-width:2px}.dex-card-code{font-size:7px;left:4px;bottom:3px}.dex-card-info{padding:8px}.dex-card-meta{flex-wrap:wrap;gap:2px;min-height:14px}.dex-rarity{font-size:9px}.dex-range{font-size:8px}.dex-types{gap:4px 6px;min-height:31px;align-content:center}.dex-types>span{font-size:9px;line-height:14px}.dex-types img{width:12px;height:12px}.dex-equipment{flex-wrap:wrap;gap:5px;margin-top:6px;padding-top:6px}.dex-equipment>span:first-child{flex-basis:100%;font-size:9px;line-height:12px}.dex-equipment>div{margin-right:auto}.dex-equipment img{width:20px;height:20px}.dex-card-open{width:13px;height:13px}.dex-energy-watermark{width:82px;height:82px}}
+@media(prefers-reduced-motion:reduce){.champion-card.pokemon-card,.dex-art,.dex-card-shell:after{transition:none}.champion-card.pokemon-card:hover,.pokemon-card:is(:hover,:focus-visible) .dex-art{transform:none}.dex-card-shell:after{display:none}}
+@media(min-width:1200px) and (max-width:1450px){body:not(.is-home) #champion-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* Shared surfaces inherit the selected palette on every route. */
+body .dropdown{background:var(--surface);color:var(--text);border:1px solid var(--line);box-shadow:0 8px 24px #0003}
+body .dropdown :is(strong,label){color:var(--text)}
+body .dropdown a{color:var(--accent)}
+body input[type=checkbox]{accent-color:var(--accent)}
+body :is(.sidebar:hover,.sidebar:focus-within,.sidebar.is-pinned){background:var(--surface)}
+body .sidebar-toggle img{filter:var(--icon-filter)}
+body .sources-content,body .entity-dialog{color:var(--text)}
+body .entity-dialog{background:var(--surface);border-color:var(--control-border)}
+body :is(.entity-dialog h3,.mechanic-text,.quick-guide,.ad-panel,.section-heading p){color:var(--muted)}
+body :is(.entity-dialog a,.sources-content a,.provenance a){color:var(--accent)}
+body :is(.entity-dialog h2,.ad-label>span,.ad-copy strong,.footer-group h3,.crafted,.social-column p){color:var(--text)}
+body :is(.synergy-card,.item-card,.stat-grid>div,.empty-state){background:var(--surface);border-color:var(--line)}
+body .champion-footer{background:var(--surface-raised);color:var(--text)}
+body :is(.clear-search,.hamburger){color:var(--muted)}
+body .download-app:hover{background:#a81737}
+body .set-button{color:#fff;text-shadow:0 1px 3px #000}
+body .home-path-arrow{color:var(--accent)}
+body .sign-in:hover,body .icon-button:hover{background:var(--hover-surface)}
+body .gamebase-link{border-color:var(--line)}
+body .comp-filter-controls :is(input,select),body .guide-controls select,body .guide-xp-calculator input{font-family:var(--font-ui);color:var(--text);background:var(--surface-raised);border-color:var(--control-border)}
+body .comp-filter-controls input::placeholder{color:var(--muted)}
+body .comp-filter-results{color:var(--gold)}
+body .composition-header{background:var(--surface);border-color:var(--line)}
+body .composition-header:before{background:none}
+body .composition-controls:before{background:var(--surface-raised)}
+body .composition:has(.expand-composition[aria-expanded=true])>.composition-header{background:var(--surface-raised);border-color:var(--gold)}
+body .composition .pac-team-detail{background:var(--surface);border-color:var(--line)}
+body .comp-rank:before{background:var(--surface)}
+body .comp-rank{background:var(--gold)}
+body .composition-tags span{background:var(--page);color:var(--muted)}
+body .composition-tags .difficulty{background:var(--selected);color:var(--gold)}
+body .pac-team-detail .general-info h3,body .team-identity p{color:var(--gold)}
+body :is(.variant-option[aria-pressed=true],.guide-levels>button[aria-selected=true],.guide-table-scroll tr.is-current){background:var(--selected)}
+body :is(.pac-board-name,.holder-name){background:var(--label-bg);color:var(--label-text)}
+body .guide-table-scroll th[style]{color:color-mix(in srgb,var(--rarity) 65%,var(--text))}
+body .team-identity{background:none}
+body .team-synergy{background:var(--surface-raised)}
+body .team-synergy>span:first-child{color:var(--gold)}
+body .composition-detail strong{color:var(--text)}
+body .guide-levels>button{background:var(--surface-raised);color:var(--muted);border-color:var(--line)}
+body .guide-levels>button:hover{background:var(--hover-surface);border-color:var(--control-border)}
+body .guide-levels>button[aria-pressed=true]{background:var(--selected);color:var(--gold);border-color:var(--gold)}
+body .guide-step-title>span{color:color-mix(in srgb,var(--rarity) 55%,var(--text))}
+body :is(.share-comp,.import-composition:before,.medallion-stars){background:var(--badge-gold)}
+body .expand-composition img,body .variant-toggle img{filter:var(--icon-filter)}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:34px;padding:6px 11px;flex:none;border:1px solid var(--control-border);border-radius:20px;background:var(--surface);color:var(--text);font:800 11px var(--font-ui)}
+.theme-toggle:hover{background:var(--hover-surface)}
+.theme-toggle:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.theme-toggle-icon{font-size:19px;line-height:20px;min-width:19px}
+.mobile-actions{display:flex;align-items:center;gap:8px}
+@media(max-width:699px){.mobile-actions .theme-toggle{width:34px;height:36px;padding:4px}.mobile-actions .theme-toggle-label{display:none}body .mobile-header{padding:0 12px}body .mobile-header .icon-button{width:34px;height:36px}body .helper-mobile-brand{font-size:16px}body .mobile-brand{gap:5px}body .mobile-brand .brand-logo{width:28px;height:28px}}

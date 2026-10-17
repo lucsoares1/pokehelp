@@ -1,0 +1,20 @@
+{
+  "name": "pokechess-helper",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "dev": "node site/server.mjs",
+    "start": "node site/server.mjs",
+    "data:import": "node tools/import-game.mjs",
+    "data:validate": "node tools/validate-data.mjs",
+    "data:assets": "node tools/cache-assets.mjs",
+    "assets:presentation": "node tools/cache-presentation.mjs",
+    "assets:banner": "node tools/prepare-banner.mjs",
+    "extension:build": "node tools/build-extension.mjs",
+    "check": "node tools/check-syntax.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "devDependencies": { "typescript": "5.9.3" }
+}

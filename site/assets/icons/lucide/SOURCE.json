@@ -1,0 +1,52 @@
+{
+  "package": "lucide-static",
+  "version": "1.57.0",
+  "license": "ISC; includes Feather MIT notices in LICENSE",
+  "sources": [
+    {
+      "name": "external-link.svg",
+      "url": "https://unpkg.com/lucide-static@1.57.0/icons/external-link.svg",
+      "sha256": "9e6dc6f0d4e7eefc6c528fe57a65c6b63d3b64da28928163184fa5d34409c0b0"
+    },
+    {
+      "name": "chevron-up.svg",
+      "url": "https://unpkg.com/lucide-static@1.57.0/icons/chevron-up.svg",
+      "sha256": "b4bd4d46387207f4e22cc2565a937edf9d830620c0eee4c4bdfb12b7f1b14779"
+    },
+    {
+      "name": "chevron-down.svg",
+      "url": "https://unpkg.com/lucide-static@1.57.0/icons/chevron-down.svg",
+      "sha256": "15d2d5a5e10bf3255ea91a7061b21e9857142469a70f54f9dda07f978c84d975"
+    },
+    {
+      "name": "x.svg",
+      "url": "https://unpkg.com/lucide-static@1.57.0/icons/x.svg",
+      "sha256": "ff00b03323c3ffc23faf561a2de5678cff04bf0035ad5eedcc22074654a4940c"
+    },
+    {
+      "name": "arrow-up.svg",
+      "url": "https://unpkg.com/lucide-static@1.57.0/icons/arrow-up.svg",
+      "sha256": "50b73ef963e763bdff7e80fb2407e5513bdf5b1a3188d20c7756e46f463f5498"
+    },
+    {
+      "name": "chevrons-right.svg",
+      "url": "https://unpkg.com/lucide-static@1.57.0/icons/chevrons-right.svg",
+      "sha256": "d31cdea43816a10a0e3d5e2518e3ab2460d840f1503ca729ce046f2c6fadad70"
+    },
+    {
+      "name": "sparkles.svg",
+      "url": "https://unpkg.com/lucide-static@1.57.0/icons/sparkles.svg",
+      "sha256": "cca35a8c0dda692e57e3ec4c2688660aaa847428f7d26f239adaea4354fbd724"
+    },
+    {
+      "name": "check.svg",
+      "url": "https://unpkg.com/lucide-static@1.57.0/icons/check.svg",
+      "sha256": "7fe8dc3b44a47df1dfbaf95e36639f056095bb5ee02bde9988c22ac4c29cd71c"
+    },
+    {
+      "name": "LICENSE",
+      "url": "https://unpkg.com/lucide-static@1.57.0/LICENSE",
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+    }
+  ]
+}

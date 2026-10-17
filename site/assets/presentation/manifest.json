@@ -1,0 +1,94 @@
+{
+  "revision": "ba403973fdf9d0ac59175813861e6a1f8ed5020c",
+  "policy": "Recursos visuais de apresentação separados dos snapshots mecânicos. Nenhuma ilustração é usada para outra forma do Pokémon.",
+  "records": [
+    {
+      "id": "GYARADOS",
+      "path": "assets/presentation/pokemon/130.png",
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/ba403973fdf9d0ac59175813861e6a1f8ed5020c/sprites/pokemon/other/official-artwork/130.png",
+      "credit": "Pokémon / Nintendo / Creatures / GAME FREAK; arquivo distribuído pelo repositório PokeAPI/sprites.",
+      "bytes": 146784,
+      "sha256": "41d17760b81321cc7a3fb2cb1568d3c33010e892b687eeacb3738ba307071f8b"
+    },
+    {
+      "id": "VOLCANION",
+      "path": "assets/presentation/pokemon/721.png",
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/ba403973fdf9d0ac59175813861e6a1f8ed5020c/sprites/pokemon/other/official-artwork/721.png",
+      "credit": "Pokémon / Nintendo / Creatures / GAME FREAK; arquivo distribuído pelo repositório PokeAPI/sprites.",
+      "bytes": 161784,
+      "sha256": "f75f159016630dc21e4318af93f46f6df2af99fc94236c41cfa3274203fe5cd9"
+    },
+    {
+      "id": "UMBREON",
+      "path": "assets/presentation/pokemon/197.png",
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/ba403973fdf9d0ac59175813861e6a1f8ed5020c/sprites/pokemon/other/official-artwork/197.png",
+      "credit": "Pokémon / Nintendo / Creatures / GAME FREAK; arquivo distribuído pelo repositório PokeAPI/sprites.",
+      "bytes": 99819,
+      "sha256": "8d7f18f7b323269dff84480f1ee8873a5d47a3eb3fd4b2ac1d2bbf0cf45a6ddd"
+    },
+    {
+      "id": "LICKILICKY",
+      "path": "assets/presentation/pokemon/463.png",
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/ba403973fdf9d0ac59175813861e6a1f8ed5020c/sprites/pokemon/other/official-artwork/463.png",
+      "credit": "Pokémon / Nintendo / Creatures / GAME FREAK; arquivo distribuído pelo repositório PokeAPI/sprites.",
+      "bytes": 141158,
+      "sha256": "5503085a1f171390358f1a608092c9bf560a92bfdcc665fa44e9725d44cf3fef"
+    },
+    {
+      "id": "MIGHTYENA",
+      "path": "assets/presentation/pokemon/262.png",
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/ba403973fdf9d0ac59175813861e6a1f8ed5020c/sprites/pokemon/other/official-artwork/262.png",
+      "credit": "Pokémon / Nintendo / Creatures / GAME FREAK; arquivo distribuído pelo repositório PokeAPI/sprites.",
+      "bytes": 136862,
+      "sha256": "f904be2a76a9385433f0e84c858f8a2435ac84581cefcf138f9d536a1e40492b"
+    },
+    {
+      "id": "CARNIVINE",
+      "path": "assets/presentation/pokemon/455.png",
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/ba403973fdf9d0ac59175813861e6a1f8ed5020c/sprites/pokemon/other/official-artwork/455.png",
+      "credit": "Pokémon / Nintendo / Creatures / GAME FREAK; arquivo distribuído pelo repositório PokeAPI/sprites.",
+      "bytes": 130754,
+      "sha256": "47747c2f8e409ded1c4e4d85ce454c000c0a61ec93cfcc567ef08b3b43614fc1"
+    },
+    {
+      "id": "GREAT_TUSK",
+      "path": "assets/presentation/pokemon/984.png",
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/ba403973fdf9d0ac59175813861e6a1f8ed5020c/sprites/pokemon/other/official-artwork/984.png",
+      "credit": "Pokémon / Nintendo / Creatures / GAME FREAK; arquivo distribuído pelo repositório PokeAPI/sprites.",
+      "bytes": 137754,
+      "sha256": "36227e89ce10b8206389fc52ec34940a0cbcac3a514f15ef5b93a3e1600cdf2d"
+    },
+    {
+      "id": "RAMPARDOS",
+      "path": "assets/presentation/pokemon/409.png",
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/ba403973fdf9d0ac59175813861e6a1f8ed5020c/sprites/pokemon/other/official-artwork/409.png",
+      "credit": "Pokémon / Nintendo / Creatures / GAME FREAK; arquivo distribuído pelo repositório PokeAPI/sprites.",
+      "bytes": 126570,
+      "sha256": "5a4bccdfd1accec3d88e7b9e3d52962a5933ad47ac8e969bfd87b27c71ff10ff"
+    },
+    {
+      "id": "nunito-latin",
+      "path": "assets/fonts/nunito-latin.woff2",
+      "source": "https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2",
+      "credit": "The Nunito Project Authors, SIL Open Font License 1.1.",
+      "bytes": 39128,
+      "sha256": "ba344451eab25b217a165363b1982048a5e5830a0daf36577973955a04cac793"
+    },
+    {
+      "id": "nunito-latin-ext",
+      "path": "assets/fonts/nunito-latin-ext.woff2",
+      "source": "https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2",
+      "credit": "The Nunito Project Authors, SIL Open Font License 1.1.",
+      "bytes": 35588,
+      "sha256": "2c8d792869818ecb253a46bc3c63c7013df7aac2f69291c3c85e5cdc94160960"
+    },
+    {
+      "id": "nunito-license",
+      "path": "assets/fonts/Nunito-OFL.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/nunito/OFL.txt",
+      "credit": "The Nunito Project Authors.",
+      "bytes": 4385,
+      "sha256": "580df76c95a1ec5ab878ceb25bb3d85c6a076804e9c970c8c6972aea775fdf65"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "6.11.1",
+  "repository": "keldaanCommunity/pokemonAutoChess",
+  "revision": "07367c341fe928763da2b565c2eee010433e4fc1",
+  "branchAtReview": "prod",
+  "compatibility": "Version in prod package.json matches live /status. Deployment commit is not exposed by the server.",
+  "reviewedAt": "2026-10-15",
+  "defaultTier": "LEVEL_BALL"
+}

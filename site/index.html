@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Pokémon, itens, receitas, sinergias e composições de Pokémon Auto Chess.">
+  <title>PokeChess Helper</title>
+  <script src="theme.js"></script>
+  <link rel="icon" href="assets/pac/unavailable.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="compositions.css">
+  <link rel="stylesheet" href="pokechess.css">
+  <link rel="stylesheet" href="composition-teams.css">
+  <link rel="stylesheet" href="leveling-guide.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="patch-news.css">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="home-discovery.css">
+  <link rel="stylesheet" href="navigation-actions.css">
+  <link rel="stylesheet" href="overlay.css">
+  <script type="module" src="main.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+  <header class="top-bar">
+    <a href="#home" class="brand" aria-label="PokeChess Helper — início"><img class="brand-logo" src="assets/brand/logo.png" alt="" width="34" height="34"><span class="helper-brand">PokeChess <small>HELPER</small></span></a>
+    <nav id="game-navigation" class="game-navigation" aria-label="Seções"></nav>
+    <div class="more-games-wrap"><button class="icon-button more-games-button" id="more-games-button" aria-label="Mais opções" aria-expanded="false" aria-controls="more-games">•••</button><div id="more-games" class="dropdown more-games" hidden></div></div>
+    <a class="gamebase-link" href="#sources"><img class="brand-logo" src="assets/brand/logo.png" alt="" width="32" height="32"><span>PokeChess Helper · Fontes e versão</span></a>
+  </header>
+  <header class="mobile-header">
+    <button class="icon-button" id="mobile-menu-button" aria-label="Abrir navegação" aria-expanded="false" aria-controls="sidebar"><span class="hamburger" aria-hidden="true">☰</span></button>
+    <a href="#home" class="mobile-brand" aria-label="PokeChess Helper — início"><img class="brand-logo" src="assets/brand/logo.png" alt="" width="32" height="32"><span class="helper-mobile-brand">PokeChess <small>Helper</small></span></a>
+    <div class="mobile-actions"><button class="overlay-toggle" data-overlay-toggle type="button" aria-label="Abrir overlay" title="Abrir overlay">◈</button><button class="theme-toggle" data-theme-toggle type="button" role="switch" aria-label="Tema claro" aria-checked="false" title="Ativar tema claro"><span class="theme-toggle-icon" aria-hidden="true">☾</span><span class="theme-toggle-label" aria-hidden="true">Escuro</span></button><button class="icon-button" id="mobile-search-button" aria-label="Buscar no catálogo"><span class="search-icon" aria-hidden="true"></span></button></div>
+  </header>
+  <div class="toolbar">
+    <div class="set-menu-wrap"><button id="set-button" class="set-button" aria-expanded="false" aria-controls="set-menu"><span id="version-label">Versão</span><img src="assets/common/icons/system-icons/down-arrow.svg" alt="" width="12" height="12"></button><div class="dropdown set-menu" id="set-menu" hidden><strong>Carregando versão…</strong></div></div>
+    <div class="nav-primary-actions" role="group" aria-label="Jogar e baixar">
+      <a class="nav-action nav-action-play" href="https://pokemon-auto-chess.com/" target="_blank" rel="noopener noreferrer" aria-label="Jogar Pokémon Auto Chess"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7Z" fill="currentColor" stroke="none"/></svg><span>Jogar Pokémon</span></a>
+      <a class="nav-action nav-action-download" href="downloads/pokechess-overlay.zip" download="pokechess-overlay.zip" aria-label="Baixar extensão (.zip)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4"/></svg><span>Baixar extensão</span></a>
+    </div>
+    <form class="page-search" role="search"><span class="search-icon" aria-hidden="true"></span><input id="page-search" type="search" placeholder="Buscar Pokémon, item ou sinergia" aria-label="Buscar Pokémon, itens e composições" autocomplete="off"><button class="clear-search" type="reset" aria-label="Limpar busca" hidden>×</button></form>
+    <a class="sign-in" href="#saved">Salvas</a>
+    <button class="overlay-toggle" data-overlay-toggle type="button" aria-label="Abrir overlay">◈ <span>Overlay</span></button>
+    <button class="theme-toggle" data-theme-toggle type="button" role="switch" aria-label="Tema claro" aria-checked="false" title="Ativar tema claro"><span class="theme-toggle-icon" aria-hidden="true">☾</span><span class="theme-toggle-label" aria-hidden="true">Escuro</span></button>
+    <div class="settings-wrap"><button id="settings-button" class="icon-button" aria-label="Preferências" aria-expanded="false" aria-controls="settings-menu"><img src="assets/common/icons/ngf-system/settings.svg" alt="" width="20" height="20"></button><div id="settings-menu" class="dropdown settings-menu" hidden><strong>Preferências</strong><label><input id="pin-sidebar" type="checkbox"> Manter navegação expandida</label><label><input id="hide-ad-spaces" type="checkbox"> Ocultar painéis laterais</label><a href="#sources">Fontes e créditos</a></div></div>
+  </div>
+  <button id="menu-backdrop" class="menu-backdrop" aria-label="Fechar navegação" hidden></button>
+  <aside id="sidebar" class="sidebar" aria-label="Navegação do PokeChess Helper"><nav id="sidebar-navigation"></nav><button id="sidebar-toggle" class="sidebar-toggle" aria-label="Expandir navegação" aria-expanded="false"><img class="toggle-glyph" src="assets/common/icons/system-icons/right-arrow.svg" alt=""><span class="nav-label">Recolher menu</span></button></aside>
+  <main id="main" class="page-layout">
+    <div class="main-column"><p id="data-error" class="empty-state" role="alert" hidden></p>
+      <section id="home" class="home-welcome" aria-labelledby="hero-title">
+        <div class="welcome-copy">
+          <p class="welcome-greeting">Bem-vindo ao PokeChess Helper</p>
+          <h1 id="hero-title">Bora montar<br> <em>seu próximo time?</em></h1>
+          <p class="welcome-description">Conheça os Pokémon, combine os itens e descubra uma comp para chamar de sua.</p>
+          <div class="welcome-actions"><a class="welcome-primary" href="#compositions">Explorar composições <span aria-hidden="true">→</span></a><a class="welcome-secondary" href="#pokemons">Explorar Pokémon</a></div>
+          <p class="welcome-note">Novo no jogo? A gente te ajuda a dar o próximo passo.</p>
+          <p id="data-status" class="data-status" role="status">Preparando seu guia…</p>
+        </div>
+        <div id="home-video" class="welcome-video" aria-label="Vídeo de Pokémon Champions">
+          <div class="welcome-video-frame">
+            <video id="home-video-player" autoplay muted loop playsinline preload="metadata" aria-label="Pokémon Champions — trecho de 0 a 47 segundos" disablepictureinpicture><source src="assets/presentation/banner.mp4" type="video/mp4"></video>
+            <p class="video-loading" data-video-loading>Preparando o vídeo…</p>
+          </div>
+          <button class="video-start" type="button" data-video-start hidden>Reproduzir vídeo</button>
+          <p class="video-status" data-video-status role="status" hidden></p>
+        </div>
+      </section>
+      <div class="home-explore"><section id="home-start" class="home-start" aria-labelledby="home-start-title"><img class="home-start-image" src="assets/presentation/dobra2.png" alt="" aria-hidden="true" width="1920" height="1080" loading="lazy" decoding="async"><div class="home-start-heading"><div><p class="home-section-kicker">Comece por aqui</p><h2 id="home-start-title">Tudo o que você precisa<br> para criar times incríveis</h2></div><p>Do primeiro Pokémon à sua próxima comp.<br>Encontre as ferramentas para aprender, montar e evoluir.</p></div><div id="home-paths" class="home-paths"></div></section>
+      <section id="champions" class="champions-section" aria-labelledby="champions-title"><div class="section-heading"><div><h2 id="champions-title">Conheça os <span>Pokémon</span></h2><p>Explore habilidades, funções e itens populares. Descubra novas sinergias para sua equipe.</p></div><a class="gold-link" href="#pokemons">Ver todos os Pokémon <span aria-hidden="true">→</span></a></div><div id="home-discovery-controls" class="discovery-controls" hidden><label class="discovery-search"><span class="search-icon" aria-hidden="true"></span><input id="home-pokemon-search" type="search" placeholder="Buscar Pokémon…" aria-label="Buscar Pokémon na vitrine" autocomplete="off"></label><div class="discovery-control-row"><div id="home-role-filters" class="discovery-role-filters" role="group" aria-label="Função dos Pokémon"></div><button id="home-more-filters" class="discovery-more-filters" type="button" aria-expanded="false" aria-controls="home-extra-filters"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 4h14l-5 6v5l-4 2v-7Z"/></svg>Mais filtros</button></div><div id="home-extra-filters" class="discovery-extra-filters" hidden><label>Alcance<select id="home-range-filter"><option value="">Todos os alcances</option><option value="melee">Corpo a corpo</option><option value="ranged">À distância</option></select></label><label>Sinergia<select id="home-synergy-filter"><option value="">Todas as sinergias</option></select></label><button type="button" id="home-clear-filters">Limpar filtros</button></div></div><div id="catalog-filters" class="catalog-toolbar" hidden><select id="kind-filter" aria-label="Tipo de registro"><option value="pokemon">Pokémon e formas</option><option value="summon">Invocações</option><option value="egg">Ovos</option><option value="">Todos os registros</option></select><select id="range-filter" aria-label="Filtrar alcance"><option value="">Todos os alcances</option><option value="melee">Corpo a corpo</option><option value="ranged">À distância</option></select><select id="synergy-filter" aria-label="Filtrar sinergia"></select><select id="role-filter" aria-label="Filtrar função"></select></div><div class="catalog-toolbar report-filter"><label for="tier-filter">Relatórios de Pokémon e itens</label><select id="tier-filter" aria-label="Faixa dos relatórios"></select></div><p id="pokemon-count" class="source-note" role="status" aria-live="polite"></p><div id="champion-grid" class="champion-grid"></div><p id="champions-empty" class="empty-state" hidden>Nenhum Pokémon encontrado. Ajuste a busca ou os filtros.</p><button id="more-pokemon" class="show-more" hidden>Mostrar mais Pokémon</button></section>
+      </div><section id="compositions" class="compositions-section" aria-labelledby="composition-heading"><div class="section-heading"><div><h2 id="composition-heading">Composições <span>do meta</span></h2><p>Explore grupos de equipes e equipamentos observados nos relatórios públicos do jogo.</p></div><a class="gold-link" href="#compositions">Ver todas as comps <span aria-hidden="true">→</span></a></div><form id="composition-filters" class="composition-filters" aria-label="Filtrar composições" hidden>
+  <div class="comp-filter-top"><b>Encontre sua composição</b><button type="reset" id="clear-comp-filters">Limpar filtros</button></div>
+  <div class="comp-filter-controls">
+    <label>Sinergia<select id="comp-synergy"><option value="">Todas as sinergias</option></select></label>
+    <label>Presença da sinergia<select id="comp-synergy-scope"><option value="primary">Principal no grupo</option><option value="active">Ativa na equipe</option></select></label>
+    <label>Pokémon<input id="comp-pokemon" type="search" list="comp-pokemon-options" placeholder="Ex.: Gyarados" autocomplete="off"><datalist id="comp-pokemon-options"></datalist></label>
+    <label>Participação do Pokémon<select id="comp-pokemon-scope"><option value="any">Na equipe</option><option value="featured">Em destaque</option></select></label>
+    <label>Ordenar por<select id="comp-sort"><option value="report">Ordem do relatório</option><option value="place">Menor colocação média</option><option value="wins">Maior taxa de vitória</option><option value="count">Mais ocorrências</option></select></label>
+  </div>
+  <p class="comp-filter-help">Principal = maior contagem no grupo; empates incluem ambas. Destaque = peça com mais itens no exemplo, usando a ordem da fonte para desempatar. Não é uma classificação de carry.</p>
+  <p id="comp-filter-results" class="comp-filter-results" role="status" aria-live="polite"></p>
+</form><section id="game-overlay-connection" class="game-overlay-connection" tabindex="-1" aria-labelledby="game-overlay-heading" hidden><div><h3 id="game-overlay-heading">Sua equipe no Helper e no jogo</h3><p data-game-overlay-status role="status">Verificando extensão…</p></div><div class="game-overlay-actions"><button type="button" data-check-overlay>Verificar conexão</button><a href="https://pokemon-auto-chess.com/" target="pokechess-game" rel="noopener noreferrer">Abrir Pokémon Auto Chess ↗</a></div><details><summary>Instalar o overlay no Brave, Chrome ou Edge</summary><ol><li><a href="downloads/pokechess-overlay.zip" download>Baixe a extensão (.zip)</a> e extraia os arquivos em uma pasta fixa.</li><li>Abra <code>brave://extensions</code>, <code>chrome://extensions</code> ou <code>edge://extensions</code>, conforme seu navegador.</li><li>Ative o modo do desenvolvedor, clique em <strong>Carregar sem compactação</strong> e selecione a pasta extraída que contém <code>manifest.json</code>.</li><li>Se já instalou, recarregue a extensão para usar a versão 0.11.0. Recarregue esta página e a aba do jogo. Escolha uma variação e clique no botão amarelo para importar.</li></ol><p>O painel aparece no <strong>Helper e em pokemon-auto-chess.com</strong>, inclusive no lobby. Outras páginas não recebem o overlay. Para reabrir um painel fechado, clique no ícone da extensão enquanto estiver na aba do jogo. Na versão 0.11.0, a comp importada alimenta o planejador nativo do jogo e destaca as ofertas das famílias finais e dos provisórios do nível escolhido no guia. Você pode desligar os destaques no painel para restaurar seu plano anterior.</p><p>Para acompanhar os itens, abra os detalhes de um item ou Pokémon durante a partida. O painel indica quando a reserva está conectada e mostra receitas, componentes faltantes e destinatários. Itens úteis do carrossel e da reserva recebem destaque dourado; escolher, montar e equipar continua manual.</p></details></section><p id="report-status" class="source-note"></p><div id="composition-list" class="composition-list"></div><p id="compositions-empty" class="empty-state" hidden>Nenhuma composição encontrada neste snapshot para esta seleção.</p><button id="more-comps" class="show-more" hidden>Mostrar mais composições</button></section>
+      <section id="home-patch" class="patch-news" aria-labelledby="patch-news-title" hidden></section>
+      <section id="catalog-section" class="champions-section" hidden><div class="section-heading"><div><h2 id="catalog-heading"></h2><p>Consulte as regras e os dados da versão importada.</p></div></div><div id="item-filters" class="catalog-toolbar" hidden><select id="item-category" aria-label="Categoria do item"><option value="">Todos os itens</option><option value="component">Componentes</option><option value="craftable">Construíveis</option><option value="tool">Ferramentas</option><option value="shiny">Brilhantes</option><option value="unholdable">Inequipáveis</option></select><select id="item-sort" aria-label="Ordenar itens"><option value="popular">Mais usados</option><option value="place">Menor colocação média</option></select></div><div id="catalog-content"></div><p id="catalog-empty" class="empty-state" hidden>Nenhum resultado. Ajuste sua busca.</p><button id="catalog-more" class="show-more" hidden>Mostrar mais</button></section><footer class="footer"><div class="footer-groups" id="footer-groups"></div><div class="footer-bottom"><div><p class="crafted">PokeChess Helper · Feito para aprender</p><p class="reference-note">Projeto de fã independente, com dados públicos de Pokémon Auto Chess. Pokémon e recursos associados pertencem aos seus respectivos titulares. Referência visual: Mobalytics.</p><div class="legal-links"><a href="#sources">Fontes, versão e créditos</a></div></div><div class="social-column"><a class="discord-link" href="https://pokemon-auto-chess.com/" target="_blank" rel="noopener noreferrer">Conheça o jogo <strong>Pokémon Auto Chess ↗</strong></a><p>Conteúdo público e versionado</p><small>Catálogo, relatórios e curadoria têm origens distintas.</small></div></div></footer>
+    </div>
+    <aside class="advertisement-column" aria-label="Informações e guia rápido" data-ad><div class="ad-panel"><div class="ad-label"><span>Dados do jogo</span><button type="button" data-hide-ads>Ocultar painel ↗</button></div><div class="ad-copy"><strong>Aprenda no seu ritmo</strong><p>Abra uma ficha para entender habilidades, alcance, efeitos e receitas de itens.</p><button type="button" class="remove-ads-button" data-hide-ads>Ocultar painéis</button></div></div><div class="ad-panel tall-ad"><div class="ad-label"><span>Guia rápido</span><button type="button" data-hide-ads>Ocultar painel ↗</button></div><div class="quick-guide"><h3>Qual item usar?</h3><p>Veja o efeito, a receita e os Pokémon que usam o item com frequência.</p><h3>Corpo a corpo ou à distância?</h3><p>O alcance base aparece em cada ficha. Itens e habilidades podem modificá-lo.</p><h3>Popular não é sempre melhor</h3><p>Compare função, habilidade, sinergias e o que sua partida oferece.</p></div></div></aside>
+  </main>
+  <dialog id="patch-dialog" class="patch-dialog" aria-labelledby="patch-dialog-title"><header class="patch-dialog-header"><h2 id="patch-dialog-title">Novidades do patch</h2><form method="dialog"><button type="submit" aria-label="Fechar novidades">×</button></form></header><div class="patch-modal-body" data-patch-content></div></dialog>
+  <aside id="helper-overlay" class="helper-overlay" aria-labelledby="overlay-title" tabindex="-1" hidden></aside>
+  <dialog id="entity-dialog" class="entity-dialog" aria-labelledby="entity-title"><button id="close-entity" class="icon-button entity-close" aria-label="Fechar ficha">×</button><div id="entity-content"></div></dialog>
+  <div id="search-status" class="sr-only" role="status" aria-live="polite"></div>
+</body>
+</html>
+
+
+
+

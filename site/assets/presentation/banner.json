@@ -1,0 +1,15 @@
+{
+  "source": "assets/videobanner.mp4",
+  "sourceSha256": "c8a4b612e9834ab6199e3d5bfffd747427f3d21b5a16afa3e44440e7c855fd60",
+  "sourceBytes": 77424874,
+  "path": "assets/presentation/banner.mp4",
+  "sha256": "3770745c3399cb156e4e44ed887b407ff71bb64ec0e34032a7787dc611bff0a9",
+  "bytes": 8757009,
+  "startSeconds": 0,
+  "endSeconds": 47,
+  "width": 1280,
+  "codec": "H.264",
+  "audio": false,
+  "attribution": "Vídeo fornecido pelo proprietário; trailer de Pokémon Champions. Nintendo / Creatures / GAME FREAK / The Pokémon Company.",
+  "reference": "https://www.youtube.com/watch?v=FVm9o4R4UIs"
+}

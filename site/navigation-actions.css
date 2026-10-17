@@ -1,0 +1,33 @@
+/* The two primary destinations share a diagonal seam; labels stay horizontal. */
+.nav-primary-actions{--action-cut:12px;display:flex;align-items:center;gap:2px;flex:none}
+.nav-action{position:relative;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:7px;height:38px;padding:0 27px 0 15px;white-space:nowrap;color:#fff;font:900 12px/1 var(--font-ui)}
+.nav-action:before{content:'';position:absolute;inset:0;z-index:-1;background-color:var(--action-fill);background-image:var(--trainer-texture);background-size:160px 138.564px;background-position:var(--texture-x,0px) var(--texture-y,0px);clip-path:polygon(0 0,calc(100% - var(--action-cut)) 0,100% 100%,0 100%);transition:background-color .2s ease-out;animation:nav-texture-drift 32s linear infinite;animation-play-state:paused}
+.nav-action:is(:hover,:focus-visible):before{animation-play-state:running}
+.nav-action-download:before{animation-direction:reverse;animation-duration:36s}
+@keyframes nav-texture-drift{from{background-position:var(--texture-x,0px) var(--texture-y,0px)}to{background-position:calc(var(--texture-x,0px) + 160px) calc(var(--texture-y,0px) + 138.564px)}}
+.nav-action svg{width:17px;height:17px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.nav-action-play{--action-fill:#c71e42}.nav-action-play:hover{--action-fill:#a81737}
+.nav-action-download{--action-fill:#1465c0;--texture-x:47px;--texture-y:29px;padding-left:27px;padding-right:15px}
+.nav-action-download:before{clip-path:polygon(0 0,100% 0,100% 100%,var(--action-cut) 100%)}
+.nav-action-download:hover{--action-fill:#1054a5}
+.nav-action:focus-visible{outline:2px solid var(--text);outline-offset:3px}
+@media(min-width:700px) and (max-width:1000px){
+  .nav-action{font-size:11px;padding-left:12px;padding-right:24px}.nav-action-download{padding-left:24px;padding-right:12px}
+  .toolbar>.sign-in,.toolbar>.theme-toggle .theme-toggle-label{display:none}
+  .toolbar>.theme-toggle{width:36px;padding:5px}
+  .toolbar .set-button{min-width:70px;gap:7px}
+}
+@media(max-width:699px){
+  :root{--header-height:124px}
+  html{scroll-padding-top:142px}
+  body .toolbar{display:contents}
+  body .toolbar>.set-menu-wrap,body .toolbar>.sign-in,body .toolbar>.overlay-toggle,body .toolbar>.theme-toggle,body .toolbar>.settings-wrap{display:none}
+  .toolbar>.nav-primary-actions{position:fixed;top:72px;left:0;right:0;height:52px;padding:5px 12px 9px;background:var(--surface);border-bottom:1px solid var(--line);z-index:var(--layer-toolbar)}
+  .nav-primary-actions .nav-action{flex:1;min-width:0;font-size:12px}
+  body .page-layout{margin-top:var(--header-height)}
+  body .sidebar{top:var(--header-height)}
+  body .home-welcome{scroll-margin-top:142px}
+  .toolbar:has(.is-mobile-open)>.nav-primary-actions{display:none}
+}
+@media(max-width:360px){.nav-primary-actions .nav-action{font-size:11px;gap:5px;padding-left:10px;padding-right:22px}.nav-primary-actions .nav-action-download{padding-left:22px;padding-right:10px}.nav-action svg{width:15px;height:15px}}
+@media(prefers-reduced-motion:reduce){.nav-action:before{animation:none;transition:none}}

@@ -1,0 +1,14 @@
+import {readdir,mkdir,readFile,writeFile,rename} from 'node:fs/promises';
+import {resolve} from 'node:path';
+import {execFileSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+const source=resolve('assets/videobanner.mp4'),dir=resolve('site/assets/presentation');
+const binaries=resolve('.cache/media-tools/imageio_ffmpeg/binaries');
+const ffmpeg=process.env.FFMPEG_PATH??resolve(binaries,(await readdir(binaries)).find(name=>name.endsWith('.exe'))??'ffmpeg');
+await mkdir(dir,{recursive:true});
+execFileSync(ffmpeg,['-nostdin','-hide_banner','-loglevel','error','-y','-i',source,'-t','47','-an','-vf','scale=1280:-2','-c:v','libx264','-preset','fast','-crf','28','-maxrate','1800k','-bufsize','3600k','-pix_fmt','yuv420p','-movflags','+faststart',resolve(dir,'banner.preparing.mp4')],{stdio:'inherit'});
+await rename(resolve(dir,'banner.preparing.mp4'),resolve(dir,'banner.mp4'));
+const original=await readFile(source),output=await readFile(resolve(dir,'banner.mp4'));
+const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
+await writeFile(resolve(dir,'banner.json'),JSON.stringify({source:'assets/videobanner.mp4',sourceSha256:hash(original),sourceBytes:original.length,path:'assets/presentation/banner.mp4',sha256:hash(output),bytes:output.length,startSeconds:0,endSeconds:47,width:1280,codec:'H.264',audio:false,attribution:'Vídeo fornecido pelo proprietário; trailer de Pokémon Champions. Nintendo / Creatures / GAME FREAK / The Pokémon Company.',reference:'https://www.youtube.com/watch?v=FVm9o4R4UIs'},null,2)+'\n');
+console.log(`Banner: ${output.length} bytes, 0–47 s, H.264 1280 px, sem áudio.`);

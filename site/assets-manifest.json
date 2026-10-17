@@ -1,0 +1,1526 @@
+{
+  "page": "https://mobalytics.gg/tft?int_source=homepage&int_medium=mainbutton",
+  "capturedAt": "2026-10-15",
+  "purpose": "Local visual reference for PokeChess Helper; not an official Mobalytics site.",
+  "assets": [
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/hex-tiers/S.svg?2",
+      "file": "assets/common/icons/hex-tiers/S.svg",
+      "type": "image/svg+xml",
+      "bytes": 1586,
+      "sha256": "1f6e29352e72b681d1427eb39158dcabcb33ab0aba0c8f63940404d159f7e8cf"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/mobalytics-logo/logo-mobalytics-collapsed-fixed.svg",
+      "file": "assets/common/icons/mobalytics-logo/logo-mobalytics-collapsed-fixed.svg",
+      "type": "image/svg+xml",
+      "bytes": 21612,
+      "sha256": "3d082ad8d96f1f2f31c49a9bdd4be3e7c575912b4617fb73c713ffb50091bd38"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/mobalytics-logo/logo-mobalytics-expanded-fixed.svg",
+      "file": "assets/common/icons/mobalytics-logo/logo-mobalytics-expanded-fixed.svg",
+      "type": "image/svg+xml",
+      "bytes": 27904,
+      "sha256": "bf5d2751fe522c0ac61edfc188e379eea6397b13b4d6711a692c58647264fd88"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/2xko.svg?v1",
+      "file": "assets/common/icons/ngf-games/2xko.svg",
+      "type": "image/svg+xml",
+      "bytes": 1110,
+      "sha256": "09469061206d88801bcb8d12c2eb2b699e14027ce13614f74fdc6a288ede6d9e"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/arknights-endfield.svg?v1",
+      "file": "assets/common/icons/ngf-games/arknights-endfield.svg",
+      "type": "image/svg+xml",
+      "bytes": 2445,
+      "sha256": "4eb1bbf99449165593a464f83d28bdce924776305f56b5ae36fce5a8486f3798"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/bazaar.svg?v1",
+      "file": "assets/common/icons/ngf-games/bazaar.svg",
+      "type": "image/svg+xml",
+      "bytes": 310,
+      "sha256": "56859c0c26082969172a4c3bea2dafee26e7b4fb78f2dccca69f452493436ddd"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/boderlands-4.svg?v1",
+      "file": "assets/common/icons/ngf-games/boderlands-4.svg",
+      "type": "image/svg+xml",
+      "bytes": 1020,
+      "sha256": "084ff375860308ce2a68e26a81a5b498ec5c303591695b58704824b942d31257"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/deadlock.svg?v1",
+      "file": "assets/common/icons/ngf-games/deadlock.svg",
+      "type": "image/svg+xml",
+      "bytes": 2751,
+      "sha256": "31ab206da93ab32814bede80623eff40f9b20d1e854645f359f7d84965357701"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/destiny-2.svg?v1",
+      "file": "assets/common/icons/ngf-games/destiny-2.svg",
+      "type": "image/svg+xml",
+      "bytes": 1416,
+      "sha256": "f2207ea02796c4964d2529733245616703687d308fb5699d81aa97b186848cf0"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/diablo-4.svg?v1",
+      "file": "assets/common/icons/ngf-games/diablo-4.svg",
+      "type": "image/svg+xml",
+      "bytes": 5009,
+      "sha256": "6146e483063cd5c3489d0e0f5be611284acb9c94ee50ce4e23f6eaf505ab6c45"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/elden-ring-nightreign.svg?v1",
+      "file": "assets/common/icons/ngf-games/elden-ring-nightreign.svg",
+      "type": "image/svg+xml",
+      "bytes": 2928,
+      "sha256": "0171caf863c989cff2f15396510d4285df0a5acbbcad03eb2125fbe0098c1ab7"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/genshin-impact.svg",
+      "file": "assets/common/icons/ngf-games/genshin-impact.svg",
+      "type": "image/svg+xml",
+      "bytes": 1740,
+      "sha256": "08964b55e1c04ca99d38812fa135cc0ea6da9a7cf9a4b49493842c87c8c0e928"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/hades-2.svg?v1",
+      "file": "assets/common/icons/ngf-games/hades-2.svg",
+      "type": "image/svg+xml",
+      "bytes": 369,
+      "sha256": "e56563a06fa2a830e98a40d070388a46e3ae29eba50b82293719f30b2fee36b0"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/lol.svg?v1",
+      "file": "assets/common/icons/ngf-games/lol.svg",
+      "type": "image/svg+xml",
+      "bytes": 721,
+      "sha256": "3f192f3cf6a27588e34fb543145e4353e3a3ca89745de08e10e3a7d3a0eb83d2"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/marathon.svg?v1",
+      "file": "assets/common/icons/ngf-games/marathon.svg",
+      "type": "image/svg+xml",
+      "bytes": 516,
+      "sha256": "1e7f00fa654ebac08fc6e1f1b19d744563ce96729b998f701f93f0ac4f2c2a25"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/marvel-rivals.svg?v1",
+      "file": "assets/common/icons/ngf-games/marvel-rivals.svg",
+      "type": "image/svg+xml",
+      "bytes": 1348,
+      "sha256": "fa47827cd191bb706695a178c3e0aa8b59163bd6fdc66d49a04428a519c27aa4"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/monster-hunter-wilds.svg?v1",
+      "file": "assets/common/icons/ngf-games/monster-hunter-wilds.svg",
+      "type": "image/svg+xml",
+      "bytes": 1590,
+      "sha256": "55b55dfdd50d6d5dc3c70e5e752f5d48c47492c463d5d000e19d88a17fbb5b23"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/neverness-to-everness.svg?v1",
+      "file": "assets/common/icons/ngf-games/neverness-to-everness.svg",
+      "type": "image/svg+xml",
+      "bytes": 11588,
+      "sha256": "e3ae5e56e67a961ec5c7d1e017e8346c2b80c7c955df2723c6357c61ea92b73b"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/news.svg?v1",
+      "file": "assets/common/icons/ngf-games/news.svg",
+      "type": "image/svg+xml",
+      "bytes": 4003,
+      "sha256": "55dafbc61a9fa09c3b0e513c05cd507e744e3946d796a1b86e5079cd5bd6af4d"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/ovw.svg?v1",
+      "file": "assets/common/icons/ngf-games/ovw.svg",
+      "type": "image/svg+xml",
+      "bytes": 1261,
+      "sha256": "4ee55edb394b858e1de985a8fd1f551c8ccf0ba19a0a0841e8fa837197f46aa3"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/poe-2.svg?v1",
+      "file": "assets/common/icons/ngf-games/poe-2.svg",
+      "type": "image/svg+xml",
+      "bytes": 3932,
+      "sha256": "3346eaaa641880c97e46eca046f2ee30a7f271b1a408edadd144364dc7e3f691"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/poe.svg?v1",
+      "file": "assets/common/icons/ngf-games/poe.svg",
+      "type": "image/svg+xml",
+      "bytes": 3014,
+      "sha256": "2cec2098097beb0aae8703b14cc85dbbbc3e3d31f464982fccc6eeb563d8e377"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/riftbound.svg?v1",
+      "file": "assets/common/icons/ngf-games/riftbound.svg",
+      "type": "image/svg+xml",
+      "bytes": 3703,
+      "sha256": "48d2d95c2bb2a6ba581585a4c6188da605b53f489f09134eac58573645af2c5f"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/slay-the-spire-2.svg?v1",
+      "file": "assets/common/icons/ngf-games/slay-the-spire-2.svg",
+      "type": "image/svg+xml",
+      "bytes": 5372,
+      "sha256": "37b6f3a22ee41b950f52b62e4cbc9dafc401c520b6024786d167ff1245069539"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/tft.svg?v1",
+      "file": "assets/common/icons/ngf-games/tft.svg",
+      "type": "image/svg+xml",
+      "bytes": 1512,
+      "sha256": "54d3d32239b543467750c2ca683329431d48bdda13c71155fe7e623f4390be32"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/valorant.svg?v1",
+      "file": "assets/common/icons/ngf-games/valorant.svg",
+      "type": "image/svg+xml",
+      "bytes": 624,
+      "sha256": "dfee41d4fa6e0608eaa0d034498a70216bdb5653b20d82d5a7823806e68c88d0"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/wowfor.svg",
+      "file": "assets/common/icons/ngf-games/wowfor.svg",
+      "type": "image/svg+xml",
+      "bytes": 2616,
+      "sha256": "8f37cfb543d751e4ad3aaa6d50682ffceccf76807f1dbcda7fac1c1361e87c72"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-games/zzz.svg?v1",
+      "file": "assets/common/icons/ngf-games/zzz.svg",
+      "type": "image/svg+xml",
+      "bytes": 639,
+      "sha256": "db5b9421f58781fe488e98f5ffe471f74030350133e9a031098be4c4dfc16a08"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-system/more-horizontal.svg",
+      "file": "assets/common/icons/ngf-system/more-horizontal.svg",
+      "type": "image/svg+xml",
+      "bytes": 546,
+      "sha256": "6ba248f9211f162a35ba9d3aec3627f68b3d8fe7c3f841fe5254a4b3bf70486a"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-system/settings.svg",
+      "file": "assets/common/icons/ngf-system/settings.svg",
+      "type": "image/svg+xml",
+      "bytes": 3315,
+      "sha256": "3d3b5a8b526ba25ba40485bb2be93607c150e0d7034870ac3da85f577863653b"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/ngf-system/triangle-down.svg",
+      "file": "assets/common/icons/ngf-system/triangle-down.svg",
+      "type": "image/svg+xml",
+      "bytes": 303,
+      "sha256": "01e80843d3ed02130df9fd6e9c28817f546c8b1ffa476bf2460c31356d07e5a0"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/champions.svg",
+      "file": "assets/common/icons/side-menu-icon/champions.svg",
+      "type": "image/svg+xml",
+      "bytes": 2787,
+      "sha256": "74f77ca1b2699e2a74a1be67b7e82185e0c308df5be593799c5747770aac1273"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/dashboard.svg",
+      "file": "assets/common/icons/side-menu-icon/dashboard.svg",
+      "type": "image/svg+xml",
+      "bytes": 1341,
+      "sha256": "840df8cae2282d60f049c55d8240bb7b7d0585615f18ebe3d1c3cb3bb0d70b21"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/guides.svg",
+      "file": "assets/common/icons/side-menu-icon/guides.svg",
+      "type": "image/svg+xml",
+      "bytes": 709,
+      "sha256": "1ddbc2c25ff47f9375fe150de224fb2273e60a75feeac9153572b3d875c8646a"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/live-companion.svg",
+      "file": "assets/common/icons/side-menu-icon/live-companion.svg",
+      "type": "image/svg+xml",
+      "bytes": 1932,
+      "sha256": "af014195fe76465990d79d6d5622b523c704abeda690e5a9121b54b919a4d482"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/meta-tier-list.svg",
+      "file": "assets/common/icons/side-menu-icon/meta-tier-list.svg",
+      "type": "image/svg+xml",
+      "bytes": 2147,
+      "sha256": "6113caa0b7ca598afbc2ac378fffd123c4141e6a3122bb539b3028003a54d574"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/profile.svg",
+      "file": "assets/common/icons/side-menu-icon/profile.svg",
+      "type": "image/svg+xml",
+      "bytes": 765,
+      "sha256": "2bb0a4fa0e0148808d1ccce9fdc3525e65487f2627dd8251d89a739980adb59c"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/team-builder.svg",
+      "file": "assets/common/icons/side-menu-icon/team-builder.svg",
+      "type": "image/svg+xml",
+      "bytes": 1468,
+      "sha256": "a72d344c9135310c73e180b26e5b9a37f5c24a10f078a538a67e0dbbfad59939"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/team-comps.svg",
+      "file": "assets/common/icons/side-menu-icon/team-comps.svg",
+      "type": "image/svg+xml",
+      "bytes": 2150,
+      "sha256": "5cce5a7709af3a9829bde433427cd856f0088eca2568532b5a736e813eb3f003"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/social/facebook.svg",
+      "file": "assets/common/icons/social/facebook.svg",
+      "type": "image/svg+xml",
+      "bytes": 527,
+      "sha256": "5ec3040fd0f6acfa6d12f574ba8be4cadafbf40c6c842cab420e85610ff0d34a"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/social/instagram.svg",
+      "file": "assets/common/icons/social/instagram.svg",
+      "type": "image/svg+xml",
+      "bytes": 3183,
+      "sha256": "6de30c4d1a6d8b40857d8270ff77739d7d2bead33a85b40423c9f7750be0835f"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/social/twitter.svg",
+      "file": "assets/common/icons/social/twitter.svg",
+      "type": "image/svg+xml",
+      "bytes": 303,
+      "sha256": "d5a4bbddb08fd9446cd91744494c00ee535d0b73ce56aeeb31f426d1f06d5463"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/social/windows.svg",
+      "file": "assets/common/icons/social/windows.svg",
+      "type": "image/svg+xml",
+      "bytes": 282,
+      "sha256": "c19e2ae433e295a66e38c412d20e405cf81202055ab1f55298bd0b0677a094a2"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/social/youtube.svg",
+      "file": "assets/common/icons/social/youtube.svg",
+      "type": "image/svg+xml",
+      "bytes": 702,
+      "sha256": "05eb64b21f1a90aefe8b9c131b6a1355cbfcdcb38e85657ea16a3ba91c2ef0c0"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/specific-icons/double-arrow-up.svg",
+      "file": "assets/common/icons/specific-icons/double-arrow-up.svg",
+      "type": "image/svg+xml",
+      "bytes": 757,
+      "sha256": "6a03380b8648e16bb2f03d18ce27da829d53dba3c359db7a9144cc6d4d8c424f"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/star.svg",
+      "file": "assets/common/icons/star.svg",
+      "type": "image/svg+xml",
+      "bytes": 502,
+      "sha256": "bcff7b9714bdc5239c61bc5dd758e79881619741a0448211d79bcedcf5a9c9f4"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/system-icons/16-share.svg",
+      "file": "assets/common/icons/system-icons/16-share.svg",
+      "type": "image/svg+xml",
+      "bytes": 999,
+      "sha256": "69111b5358a7962b0419e2741aeba9cb4230a1fbe2cc1d5ab104f97986fb2c56"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/system-icons/check.svg",
+      "file": "assets/common/icons/system-icons/check.svg",
+      "type": "image/svg+xml",
+      "bytes": 532,
+      "sha256": "e9b0023def0b2dd8b486f356d67353dbc6b994321b70d1f3cdfbb9e66c74be85"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/system-icons/down-arrow.svg",
+      "file": "assets/common/icons/system-icons/down-arrow.svg",
+      "type": "image/svg+xml",
+      "bytes": 471,
+      "sha256": "5873936dfe9330f76fc1a5e58b895aec8a4e1721b10e71505b8f1f132095de74"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/system-icons/import-to-overlay.svg",
+      "file": "assets/common/icons/system-icons/import-to-overlay.svg",
+      "type": "image/svg+xml",
+      "bytes": 718,
+      "sha256": "89f506b32f583e02c4bc0ab79195bbf970621e1db884f197ee23016a0b16ed48"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/system-icons/right-arrow.svg",
+      "file": "assets/common/icons/system-icons/right-arrow.svg",
+      "type": "image/svg+xml",
+      "bytes": 471,
+      "sha256": "9319d3e864d3e11fb599e59894e549dfcefda31071dd0c78a65a0ebbbae794a0"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/system-icons/right-line-arrow.svg",
+      "file": "assets/common/icons/system-icons/right-line-arrow.svg",
+      "type": "image/svg+xml",
+      "bytes": 539,
+      "sha256": "001eff2a73e214df8a2aca664b9a9fff7abf7b8855e788c540aeb3c924062e84"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-adaptor.svg",
+      "file": "assets/common/icons/tft-synergies-set18/24-adaptor.svg",
+      "type": "image/svg+xml",
+      "bytes": 1844,
+      "sha256": "29a7014de4f81e26def668780826cb5ebf6bf982a00fde820a902058a9062388"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-apex-predator.svg?v=74",
+      "file": "assets/common/icons/tft-synergies-set18/24-apex-predator.svg",
+      "type": "image/svg+xml",
+      "bytes": 4592,
+      "sha256": "ed1296227eb09197ebd924850dc1756ebcdf25788dafe599c901581906795b1a"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-attuned.svg",
+      "file": "assets/common/icons/tft-synergies-set18/24-attuned.svg",
+      "type": "image/svg+xml",
+      "bytes": 2525,
+      "sha256": "fff338968319285bb2fa99c8267d2fb41455498413a72e1eae7e0b89a2b52633"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-avatar.svg",
+      "file": "assets/common/icons/tft-synergies-set18/24-avatar.svg",
+      "type": "image/svg+xml",
+      "bytes": 1718,
+      "sha256": "37ac8a7c357806c0f0dcab8c2e5db07035eb11fcb79604b5e64061a41f838582"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-blossom.svg",
+      "file": "assets/common/icons/tft-synergies-set18/24-blossom.svg",
+      "type": "image/svg+xml",
+      "bytes": 2858,
+      "sha256": "bd51ab895fedb908f204e602c29e9eaf3cb7313b7766a3a8b1ad7c6fb977755f"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-bounty-seeker.svg?v=74",
+      "file": "assets/common/icons/tft-synergies-set18/24-bounty-seeker.svg",
+      "type": "image/svg+xml",
+      "bytes": 2862,
+      "sha256": "68399413347568148c76ced7fa2c95d1f637a23b12b5fd85deeb977cc83837e3"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-brawler.svg?v=74",
+      "file": "assets/common/icons/tft-synergies-set18/24-brawler.svg",
+      "type": "image/svg+xml",
+      "bytes": 434,
+      "sha256": "245864b59e148355cf07f9361f5da6333807bdb225e1c652f6c1995bdd89cd7b"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-caustic.svg",
+      "file": "assets/common/icons/tft-synergies-set18/24-caustic.svg",
+      "type": "image/svg+xml",
+      "bytes": 2567,
+      "sha256": "db3be32a120d84cbdd25c61d953f63dc3650ba9e9e7471f90a8c207e89a6bce2"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-coven.svg",
+      "file": "assets/common/icons/tft-synergies-set18/24-coven.svg",
+      "type": "image/svg+xml",
+      "bytes": 3196,
+      "sha256": "96a72ab0de37746c42f8a79a907620c9eb142a44c4af676e10942f35e6694745"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-defender.svg?v=74",
+      "file": "assets/common/icons/tft-synergies-set18/24-defender.svg",
+      "type": "image/svg+xml",
+      "bytes": 685,
+      "sha256": "38a9adbcd17d1a5e9919f3e5d34170338e3f2dafe1b5bb717856c3098020b9cf"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-elderwood.svg?v=74",
+      "file": "assets/common/icons/tft-synergies-set18/24-elderwood.svg",
+      "type": "image/svg+xml",
+      "bytes": 2957,
+      "sha256": "4baa05ebad9bd02db2977cd8f7a4e786ed33e3d67fc8b7176c018af0a58a6307"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-emerald-aspect.svg?v=74",
+      "file": "assets/common/icons/tft-synergies-set18/24-emerald-aspect.svg",
+      "type": "image/svg+xml",
+      "bytes": 2656,
+      "sha256": "285b145efaaf5f7f303114a337439cbd18f1095e750546c46aef54c1414247cb"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-executioner.svg?v=74",
+      "file": "assets/common/icons/tft-synergies-set18/24-executioner.svg",
+      "type": "image/svg+xml",
+      "bytes": 564,
+      "sha256": "f1d6471a32e98657761fb6b6ecb2528d5be3949db9f3657ffd88e2e271e294ec"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-flora-fatalis.svg?v=74",
+      "file": "assets/common/icons/tft-synergies-set18/24-flora-fatalis.svg",
+      "type": "image/svg+xml",
+      "bytes": 3066,
+      "sha256": "2271f5b1be10bfbc849cfdee48721e49cfde517199c82f0b78b14069773d6078"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-greenfather.svg?v=74",
+      "file": "assets/common/icons/tft-synergies-set18/24-greenfather.svg",
+      "type": "image/svg+xml",
+      "bytes": 4087,
+      "sha256": "94f22774cb753c60a0356f595554630c9e246ea9346ea39d96ab6d91e5807bc9"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-hunter.svg",
+      "file": "assets/common/icons/tft-synergies-set18/24-hunter.svg",
+      "type": "image/svg+xml",
+      "bytes": 2503,
+      "sha256": "d4f94884e6deca0de516475b48bc7ec10e95134ebdfe11a723ccb51957f787dc"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-inferno.svg",
+      "file": "assets/common/icons/tft-synergies-set18/24-inferno.svg",
+      "type": "image/svg+xml",
+      "bytes": 2186,
+      "sha256": "e5cc24b7153417bfb956abb14d53388adac6e2a067df5c6845eeac82b89b1337"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-invoker.svg",
+      "file": "assets/common/icons/tft-synergies-set18/24-invoker.svg",
+      "type": "image/svg+xml",
+      "bytes": 965,
+      "sha256": "e148b3777cdd1c693a96523a853706b451ea0d93ee6efcea689ea1fa5763a3d5"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-juggernaut.svg",
+      "file": "assets/common/icons/tft-synergies-set18/24-juggernaut.svg",
+      "type": "image/svg+xml",
+      "bytes": 478,
+      "sha256": "4ee5920cac89707d43c2b8baf19afdb94519063f8ac3945afbd414053bb36743"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-lunar.svg",
+      "file": "assets/common/icons/tft-synergies-set18/24-lunar.svg",
+      "type": "image/svg+xml",
+      "bytes": 2540,
+      "sha256": "2fc689fae4bac8fec8386906232c6d3eadeb7d1970fe9978ab724c8f2bfa42bd"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-old-growth.svg?v=74",
+      "file": "assets/common/icons/tft-synergies-set18/24-old-growth.svg",
+      "type": "image/svg+xml",
+      "bytes": 3796,
+      "sha256": "b9903bc400ef724a375393122a78c93e69c87d94019d9f8497e75c51fce7615b"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-primal.svg",
+      "file": "assets/common/icons/tft-synergies-set18/24-primal.svg",
+      "type": "image/svg+xml",
+      "bytes": 3544,
+      "sha256": "aa2fbdace9e15963d719e2c47d28ca44ef8ceaf399b0f71e22c74c0b2879c187"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-rapidfire.svg",
+      "file": "assets/common/icons/tft-synergies-set18/24-rapidfire.svg",
+      "type": "image/svg+xml",
+      "bytes": 2007,
+      "sha256": "4dd2238c2fe0450aa25d83b7bda62cfacd08a2688525cf730d7bdda5b9092f72"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-riftbeast.svg?v=74",
+      "file": "assets/common/icons/tft-synergies-set18/24-riftbeast.svg",
+      "type": "image/svg+xml",
+      "bytes": 2862,
+      "sha256": "7cc3cd65a5658d478ab84c1fdc93575de3bca4e7aa4e6b441568212a37cce602"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-rival.svg?v=74",
+      "file": "assets/common/icons/tft-synergies-set18/24-rival.svg",
+      "type": "image/svg+xml",
+      "bytes": 3270,
+      "sha256": "97d818698ddf600b1f52cdccce2002bc3fd1f6cec3329c5e3bb2707279d366d7"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-spellweaver.svg",
+      "file": "assets/common/icons/tft-synergies-set18/24-spellweaver.svg",
+      "type": "image/svg+xml",
+      "bytes": 2520,
+      "sha256": "35e87d3fc207fba559637ace778583efbdcfa2f4cea6c98c49685ba25903b5e0"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-sprykin.svg",
+      "file": "assets/common/icons/tft-synergies-set18/24-sprykin.svg",
+      "type": "image/svg+xml",
+      "bytes": 4124,
+      "sha256": "808b44efa425226d6945cd346bb8dfb178800a9c2c4ddff25611967835fec447"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set18/24-vanguard.svg",
+      "file": "assets/common/icons/tft-synergies-set18/24-vanguard.svg",
+      "type": "image/svg+xml",
+      "bytes": 3183,
+      "sha256": "78f69f4a19d567889c415c3c44e1c4d78401304e2b14a16fb17d685911210b0d"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/common/icons/tft-system/coin.svg",
+      "file": "assets/common/icons/tft-system/coin.svg",
+      "type": "image/svg+xml",
+      "bytes": 793,
+      "sha256": "a279b13d267a8af4509b801beb42acc658577328377f6fc8219a00c459b2b5f9"
+    },
+    {
+      "source": "https://cdn.jsdelivr.net/fontsource/fonts/oswald@latest/latin-400-normal.woff2",
+      "file": "assets/fonts/oswald-400.woff2",
+      "type": "font/woff2",
+      "bytes": 12248,
+      "sha256": "e902b779e43944c300cf8ae5e4a1affa68cb8a823fd263dd2f479c4cdfbd213c"
+    },
+    {
+      "source": "https://cdn.jsdelivr.net/fontsource/fonts/oswald@latest/latin-500-normal.woff2",
+      "file": "assets/fonts/oswald-500.woff2",
+      "type": "font/woff2",
+      "bytes": 12704,
+      "sha256": "541b12882301dc44b73eaaed9e230709df1d299379c3594695870fc2f9e3ff0a"
+    },
+    {
+      "source": "https://cdn.jsdelivr.net/fontsource/fonts/oswald@latest/latin-700-normal.woff2",
+      "file": "assets/fonts/oswald-700.woff2",
+      "type": "font/woff2",
+      "bytes": 12672,
+      "sha256": "aae665c75af89ea7cb7d8ccc8b0911ea72267442ebcd84f6e3efa041ad3b3c16"
+    },
+    {
+      "source": "https://cdn.jsdelivr.net/fontsource/fonts/roboto@latest/latin-400-normal.woff2",
+      "file": "assets/fonts/roboto-400.woff2",
+      "type": "font/woff2",
+      "bytes": 21884,
+      "sha256": "425c0713a8176f92273d378599c7eac57de7fafabd4bd0ed457b70eb8f80d371"
+    },
+    {
+      "source": "https://cdn.jsdelivr.net/fontsource/fonts/roboto@latest/latin-500-normal.woff2",
+      "file": "assets/fonts/roboto-500.woff2",
+      "type": "font/woff2",
+      "bytes": 22200,
+      "sha256": "5bcc3aa180e7f26f643cd5b2621cd7c2de193d0661d913a94afd3d4881a7a34b"
+    },
+    {
+      "source": "https://cdn.jsdelivr.net/fontsource/fonts/roboto@latest/latin-700-normal.woff2",
+      "file": "assets/fonts/roboto-700.woff2",
+      "type": "font/woff2",
+      "bytes": 22240,
+      "sha256": "b9d66d1708156f765ada51939bc24ed259dafa69eb631b36e443680fe9e15879"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/alune.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/alune.png",
+      "type": "image/webp",
+      "bytes": 5770,
+      "sha256": "b85fc0bbdefd77004f574dee3d4523b0d9e5081fd1d86e70ade68c18337b42af"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/amumu.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/amumu.png",
+      "type": "image/webp",
+      "bytes": 7770,
+      "sha256": "68de8a43d705c0a0957e85d9b13f88ebc8f2d74ff9b46924cef04f5d72272ec9"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/aphelios.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/aphelios.png",
+      "type": "image/webp",
+      "bytes": 5302,
+      "sha256": "c52b1142659ea191e739c9fe9b4b27ce044d7d58c3435ce59295009e8e05f024"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/cassiopeia.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/cassiopeia.png",
+      "type": "image/webp",
+      "bytes": 5798,
+      "sha256": "2a843d00a5081c68363d72a703cdd2e02a363c1194cce2dd517040e56230407e"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/cinderling.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/cinderling.png",
+      "type": "image/webp",
+      "bytes": 6094,
+      "sha256": "f741de4e474b54f719f28fed0307cb250c0815a5b028a6e26092fda15ee8fb1b"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/diana.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/diana.png",
+      "type": "image/webp",
+      "bytes": 4702,
+      "sha256": "d0277a7c396b59f97d8021edd4553400eb1833671a8dc34a56ec365387780f2d"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/draven.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/draven.png",
+      "type": "image/webp",
+      "bytes": 5232,
+      "sha256": "837b0652da267496929d3952c84ec055b0214e853ab7d185e64fd8d639750018"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/elder-dragon.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/elder-dragon.png",
+      "type": "image/webp",
+      "bytes": 5156,
+      "sha256": "c6e292b84dfea3570e3cabcecd6d6c2b80ea6107561e54f043927cf7a83010ef"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/elise.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/elise.png",
+      "type": "image/webp",
+      "bytes": 5708,
+      "sha256": "3210c2f32ad0235eb621ef5152ff24ae92dbcbcb466945734fbc63435cb7e91b"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/ezreal.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/ezreal.png",
+      "type": "image/webp",
+      "bytes": 6692,
+      "sha256": "f4143aa655b5d836d96e59b6418dbebc71d49d8a4b79c02ed87098ff0b5f5ebc"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/fiddlesticks.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/fiddlesticks.png",
+      "type": "image/webp",
+      "bytes": 7088,
+      "sha256": "5279c9c511f5f77149775593ce9b7270fc19d5cd61c1f73adf2823b87ccb8629"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/gnar.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/gnar.png",
+      "type": "image/webp",
+      "bytes": 6574,
+      "sha256": "a139502f284c13d498c00dcb1133932aa7a3be361403c4d544adbcc2c5af6d1f"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/hecarim.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/hecarim.png",
+      "type": "image/webp",
+      "bytes": 8222,
+      "sha256": "c13aec75e817f71341d5dcef8c8f2abd5d0fbc60ff02325e250e4a7411f200db"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/ivern.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/ivern.png",
+      "type": "image/webp",
+      "bytes": 7548,
+      "sha256": "af372040d8ec19d575255d11337b0f00820a3824828cfd0b7f4142cbc0a7f709"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/kennen.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/kennen.png",
+      "type": "image/webp",
+      "bytes": 8070,
+      "sha256": "ab3cb046d6435152f0e8378d2ca81b896c27ad59ab7e2f7717282a253341224f"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/khazix.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/khazix.png",
+      "type": "image/webp",
+      "bytes": 4750,
+      "sha256": "8c9af8f1c7004ddd7366a47ccda53116ef5422b425a7c74369a680d7c11c1ed0"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/kogmaw.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/kogmaw.png",
+      "type": "image/webp",
+      "bytes": 6912,
+      "sha256": "cb1a264b313d925e64b57c10739b8ae7d9a85dcd5b6174482875b73108e9d01f"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/krug.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/krug.png",
+      "type": "image/webp",
+      "bytes": 6768,
+      "sha256": "ea29e6f7c1b1b086f5ed0aa41c2a6c51d24ecdbc525649bd501618f6e17c163c"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/maokai.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/maokai.png",
+      "type": "image/webp",
+      "bytes": 6592,
+      "sha256": "4b02bd3c0a6505b25e9fae7e43fc7a749d66099e9575b10049a7f42e87151176"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/morgana.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/morgana.png",
+      "type": "image/webp",
+      "bytes": 5532,
+      "sha256": "006c325ea96e493a64199e144c529cce06dd8fd03616e7592436898eb2791003"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/nidalee.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/nidalee.png",
+      "type": "image/webp",
+      "bytes": 5052,
+      "sha256": "24e6faaa1a48b6f8e958f15018b767fee4b8f8acf5d4fa2d9af5c008f2af2305"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/ornn.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/ornn.png",
+      "type": "image/webp",
+      "bytes": 8114,
+      "sha256": "6ec00ae44e4a9baa2bdd6107746a9a8114b07a0e7da66cf759ab17c4311943fd"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/scuttlecrab.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/scuttlecrab.png",
+      "type": "image/webp",
+      "bytes": 6670,
+      "sha256": "2df729b7db1a0b0000d6ef2bed4e5f5afbdeb709f6516e9346cfdfef94392203"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/sentinel.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/sentinel.png",
+      "type": "image/webp",
+      "bytes": 7132,
+      "sha256": "5dd569a102afe58ce0d2a3416a3010949c365b4e1fea5728062ff52458e383c5"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/sentry.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/sentry.png",
+      "type": "image/webp",
+      "bytes": 4372,
+      "sha256": "aabf1892d0ad86802c25363367cb0f5650c1e037060fad62d31415cae2ef1b3c"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/soraka.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/soraka.png",
+      "type": "image/webp",
+      "bytes": 7032,
+      "sha256": "0735e6055f49e65f02de7f2322f38a82cb12817e86d17787d34831adb6a4f088"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/taric.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/taric.png",
+      "type": "image/webp",
+      "bytes": 6164,
+      "sha256": "0107d1210ba082b8caa592db54c5e1bba275f24f6fe25f3dc63cd1ce2fc32050"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/varus.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/varus.png",
+      "type": "image/webp",
+      "bytes": 6634,
+      "sha256": "bf1c5af9739d29ebf2659bbcf9ee0a77ff981f03a225841306c2190e4332d81f"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set18/vi.png?v=74",
+      "file": "assets/tft/images/champions/icons/set18/vi.png",
+      "type": "image/webp",
+      "bytes": 5576,
+      "sha256": "efef7d30ee1f17d382167b8345ae02fe72e6e727f3b3f226b73c41a006767562"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/page-background/set18/aphelios.png",
+      "file": "assets/tft/images/champions/page-background/set18/aphelios.png",
+      "type": "image/png",
+      "bytes": 170575,
+      "sha256": "8bc74678e6ae68d3092f3e236418cbc8139cdfd81a9258f3109c6c6b110abd21"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/page-background/set18/elder-dragon.png?v=74",
+      "file": "assets/tft/images/champions/page-background/set18/elder-dragon.png",
+      "type": "image/png",
+      "bytes": 150330,
+      "sha256": "cf2068556759dcb52a065c9d5163a7352913617f9fb7450f8bc799b796d61b30"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/page-background/set18/elise.png",
+      "file": "assets/tft/images/champions/page-background/set18/elise.png",
+      "type": "image/png",
+      "bytes": 168382,
+      "sha256": "b1276ad81c8acb938d6c7ab8f8d22498fdd89c86bdf77c4598fb67047d0dca22"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/page-background/set18/khazix.png?v=74",
+      "file": "assets/tft/images/champions/page-background/set18/khazix.png",
+      "type": "image/png",
+      "bytes": 135463,
+      "sha256": "8ea3db9c7772aa3f17580691077e2f0f842ff0e58c471445f3bed694af6b91b9"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/page-background/set18/sentry.png?v=74",
+      "file": "assets/tft/images/champions/page-background/set18/sentry.png",
+      "type": "image/png",
+      "bytes": 165702,
+      "sha256": "75c7f2726f37d73735caa8228f0bdfe26f1029ecf751ca0f63614bd10a20bb97"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/team-comp-images/set18/aphelios.png",
+      "file": "assets/tft/images/champions/team-comp-images/set18/aphelios.png",
+      "type": "image/png",
+      "bytes": 61183,
+      "sha256": "58ea887f14aeb11043cabe50876d995a5a1bc0ebeab743cc740b474cb81715e3"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/team-comp-images/set18/elder-dragon.png",
+      "file": "assets/tft/images/champions/team-comp-images/set18/elder-dragon.png",
+      "type": "image/png",
+      "bytes": 55943,
+      "sha256": "5e018baa433d8ab3681337c8e54884d1e37c745b6934ce0ee8a84b8cc19a0f0a"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/team-comp-images/set18/elise.png",
+      "file": "assets/tft/images/champions/team-comp-images/set18/elise.png",
+      "type": "image/png",
+      "bytes": 61650,
+      "sha256": "0b05feec37d5fc11a9552bf36b5286ac8fdaaa5455af1c21fd963d4c9d1199c0"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/team-comp-images/set18/khazix.png",
+      "file": "assets/tft/images/champions/team-comp-images/set18/khazix.png",
+      "type": "image/png",
+      "bytes": 48865,
+      "sha256": "fd865361f8480819c12c347614745ba9ae718882dd1927f542750198e0bb5708"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/team-comp-images/set18/sentry.png",
+      "file": "assets/tft/images/champions/team-comp-images/set18/sentry.png",
+      "type": "image/png",
+      "bytes": 61502,
+      "sha256": "44bf064e4b2aac9147022475e60f0212c926a5982af6b509eb8b2a84e37bf231"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set18/ashe.png",
+      "file": "assets/tft/images/champions/thumbnail/set18/ashe.png",
+      "type": "image/png",
+      "bytes": 51354,
+      "sha256": "558299941cedd5d3d938cf605d569fbc0e4a76cf0b792a6292b42adaa19c0eb8"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set18/draven.png",
+      "file": "assets/tft/images/champions/thumbnail/set18/draven.png",
+      "type": "image/png",
+      "bytes": 52534,
+      "sha256": "b3c173a826f685d15e7929cfc15aedc16b69d0d07a71fb7cfee45b8bc9e1c419"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set18/elder-dragon.png?v=5",
+      "file": "assets/tft/images/champions/thumbnail/set18/elder-dragon.png",
+      "type": "image/png",
+      "bytes": 48107,
+      "sha256": "8cfbd34154811531bb3e01ba3da057bb0c5675cdc46adc5cb26864dea81d5946"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set18/gnar.png",
+      "file": "assets/tft/images/champions/thumbnail/set18/gnar.png",
+      "type": "image/png",
+      "bytes": 52114,
+      "sha256": "9fa14ac313c16f30f7d78147b8dbead90dd6d3737d0613037c3ded54ccf31e60"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set18/ivern.png",
+      "file": "assets/tft/images/champions/thumbnail/set18/ivern.png",
+      "type": "image/png",
+      "bytes": 57666,
+      "sha256": "d6c7b6ec424968c14f85c49d469fe6b602161d90f44930e5143982a92078bf32"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set18/kennen.png",
+      "file": "assets/tft/images/champions/thumbnail/set18/kennen.png",
+      "type": "image/png",
+      "bytes": 53624,
+      "sha256": "dbb4ea594d579d621d905f6243d59ce7f9c0a69eef7db001da894168a3d2e936"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set18/lux.png",
+      "file": "assets/tft/images/champions/thumbnail/set18/lux.png",
+      "type": "image/png",
+      "bytes": 61418,
+      "sha256": "569ea87f42ec057a1532d386d60f18f586bef273cb15a1612b02ab744f5aca01"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set18/taric.png",
+      "file": "assets/tft/images/champions/thumbnail/set18/taric.png",
+      "type": "image/png",
+      "bytes": 54775,
+      "sha256": "3ca4f387eeb99957e6b883e968fbee1096f6fcbe89f4c4f2c75769d3e9469d13"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/adaptive-helm.png",
+      "file": "assets/tft/images/game-items/set18/adaptive-helm.png",
+      "type": "image/png",
+      "bytes": 3065,
+      "sha256": "00ec43e945306976713803abc7111b8ab1cd0cdf64c7c034b37123b8a5650b3c"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/archangels-staff.png",
+      "file": "assets/tft/images/game-items/set18/archangels-staff.png",
+      "type": "image/png",
+      "bytes": 12265,
+      "sha256": "51be1a7d1b703a9aae44ca504c60ace69da9de198d8b589c0b008d79a1422af2"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/bf-sword.png?v=74",
+      "file": "assets/tft/images/game-items/set18/bf-sword.png",
+      "type": "image/webp",
+      "bytes": 1400,
+      "sha256": "669f3563bca23a92fb061f277aba37dbac470994c652948fa5a2446d1639413c"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/bloodthirster.png",
+      "file": "assets/tft/images/game-items/set18/bloodthirster.png",
+      "type": "image/png",
+      "bytes": 12761,
+      "sha256": "2f0148a1591a4c354d600ccb8dd53cedbf1882b02e552287c32b44f9dfe19143"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/blue-buff2.png",
+      "file": "assets/tft/images/game-items/set18/blue-buff2.png",
+      "type": "image/png",
+      "bytes": 3616,
+      "sha256": "c8ac60ab51f02f93ef08da482925ebe84ed99794a1d575ee9e3268af806f3410"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/bramble-vest.png",
+      "file": "assets/tft/images/game-items/set18/bramble-vest.png",
+      "type": "image/png",
+      "bytes": 12693,
+      "sha256": "d2f5e79fe0b1a7d03682a71a14b442b0188250ebef820604197f725787d2b10b"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/chain-vest.png",
+      "file": "assets/tft/images/game-items/set18/chain-vest.png",
+      "type": "image/png",
+      "bytes": 7718,
+      "sha256": "4702a526df1fcf9bd1287c493b08f23b4c2d50a40fbaa2e6993db455dc5a7f84"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/crownguard.png",
+      "file": "assets/tft/images/game-items/set18/crownguard.png",
+      "type": "image/png",
+      "bytes": 3330,
+      "sha256": "4e3e6a6974094fc1d9c07d4f976b6b5f716d0f2c521ab3932154eb4718f24eb1"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/deathblade.png?v=74",
+      "file": "assets/tft/images/game-items/set18/deathblade.png",
+      "type": "image/webp",
+      "bytes": 1928,
+      "sha256": "3c7dd55ac597f68d29938b479762317045835a90db39d49e49e426c49b4ed27f"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/edge-of-night.png",
+      "file": "assets/tft/images/game-items/set18/edge-of-night.png",
+      "type": "image/png",
+      "bytes": 2790,
+      "sha256": "b56a4bca1eccd73aa57a14b8960793de89d1320926c99c72ba7fb4ad1b6ca558"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/fimbulwinter.png",
+      "file": "assets/tft/images/game-items/set18/fimbulwinter.png",
+      "type": "image/png",
+      "bytes": 274441,
+      "sha256": "57edca68eaab1363eecaa3b29a13dd5b8fa1edb200be8a967a90a6959a385ce6"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/gargoyle-stoneplate.png?v=74",
+      "file": "assets/tft/images/game-items/set18/gargoyle-stoneplate.png",
+      "type": "image/webp",
+      "bytes": 1998,
+      "sha256": "d4a48f3194a1c7489187d4e254ae9f3ccffa8ffde8b0afa38ebf36674e15925b"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/giant-slayer.png",
+      "file": "assets/tft/images/game-items/set18/giant-slayer.png",
+      "type": "image/png",
+      "bytes": 12700,
+      "sha256": "7ccef9f2f92c4f5ae482b301e53f6838a66156529f99fc7b2491fded07a83baa"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/giants-belt.png?v=74",
+      "file": "assets/tft/images/game-items/set18/giants-belt.png",
+      "type": "image/webp",
+      "bytes": 1590,
+      "sha256": "580143800cd39a480bde2f7f564ad6b2cfccc386e8c4ad296ba000d056c16074"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/guardbreaker.png?v=74",
+      "file": "assets/tft/images/game-items/set18/guardbreaker.png",
+      "type": "image/webp",
+      "bytes": 29326,
+      "sha256": "7190ced2aa5c1a2b22c8755093226022343a182b210193d172ef3992c8a18309"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/guinsoos-rageblade.png?v=74",
+      "file": "assets/tft/images/game-items/set18/guinsoos-rageblade.png",
+      "type": "image/webp",
+      "bytes": 1728,
+      "sha256": "3ae744c7020f21b2587f71012fe7eb2d29eca21f9d79accece829a87807566bb"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/hand-of-justice.png",
+      "file": "assets/tft/images/game-items/set18/hand-of-justice.png",
+      "type": "image/png",
+      "bytes": 2544,
+      "sha256": "89d35f476047900f677947ddb7cf69d33c42255a513601013a8ebea314d16ea9"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/hextech-gunblade.png",
+      "file": "assets/tft/images/game-items/set18/hextech-gunblade.png",
+      "type": "image/png",
+      "bytes": 3338,
+      "sha256": "3a4074c6190fdda94012e93e4425e1744630c476bfd0f76720ce4a89b5d40e33"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/infinity-edge.png?v=74",
+      "file": "assets/tft/images/game-items/set18/infinity-edge.png",
+      "type": "image/webp",
+      "bytes": 2504,
+      "sha256": "130acbbd1543133d2bef25cf5baf51b9b1bd4e639fb2d12c9cac2c3391122d0a"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/ionic-spark.png",
+      "file": "assets/tft/images/game-items/set18/ionic-spark.png",
+      "type": "image/png",
+      "bytes": 3288,
+      "sha256": "deae57104edda6fc34d8d0112dadd5be2113c562f519d8d51690cf9234901af6"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/jeweled-gauntlet.png?v=74",
+      "file": "assets/tft/images/game-items/set18/jeweled-gauntlet.png",
+      "type": "image/webp",
+      "bytes": 1724,
+      "sha256": "f85c26e699db5ea4167ef9bdb80327b044583dda5fffca2a81f6248dc841d73d"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/krakensfury.png?v=74",
+      "file": "assets/tft/images/game-items/set18/krakensfury.png",
+      "type": "image/webp",
+      "bytes": 27108,
+      "sha256": "24b3c6b4455a8e757b41dc6c28062937c3246d552ab0cd8f3226642612d3651f"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/last-whisper.png?v=74",
+      "file": "assets/tft/images/game-items/set18/last-whisper.png",
+      "type": "image/webp",
+      "bytes": 1338,
+      "sha256": "3ff66d990728ee1a16cfbc30b42721a2666752e04127636e179c71a8a5dd6802"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/morellonomicon.png",
+      "file": "assets/tft/images/game-items/set18/morellonomicon.png",
+      "type": "image/png",
+      "bytes": 9308,
+      "sha256": "94fb169ffcbbfe70f91c633921cbf86900efc3b5be5d335f935e65f1de7a264c"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/needlessly-large-rod.png",
+      "file": "assets/tft/images/game-items/set18/needlessly-large-rod.png",
+      "type": "image/png",
+      "bytes": 2460,
+      "sha256": "39d83e52caf53c2c515808a39598380ff9cc2a9640c459e2f9a637d38ba68195"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/negatron-cloak.png",
+      "file": "assets/tft/images/game-items/set18/negatron-cloak.png",
+      "type": "image/png",
+      "bytes": 8591,
+      "sha256": "e40786fe5fef6dd438393a75c50b95a3d53e68c32a6ca68775eb85dc382d18c1"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/rabadons-deathcap.png?v=74",
+      "file": "assets/tft/images/game-items/set18/rabadons-deathcap.png",
+      "type": "image/webp",
+      "bytes": 1904,
+      "sha256": "6583456aa0037d9b4f40af8161fe56e671738c4fed1a31a276ce4bc4a66ad613"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/recurve-bow.png",
+      "file": "assets/tft/images/game-items/set18/recurve-bow.png",
+      "type": "image/png",
+      "bytes": 7207,
+      "sha256": "11f8bda1ef752a488a1cdd0c48c6bc46fc006276e4303e764215db911063ce79"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/redbuff.png?v=74",
+      "file": "assets/tft/images/game-items/set18/redbuff.png",
+      "type": "image/webp",
+      "bytes": 19362,
+      "sha256": "275430ad58fb276aefcf411f3137cd22be21dfc408e2b1b7625f80ff4224beff"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/sparring-gloves.png?v=74",
+      "file": "assets/tft/images/game-items/set18/sparring-gloves.png",
+      "type": "image/webp",
+      "bytes": 1254,
+      "sha256": "f8e8a5a850e264792afcf5dfa22629a6e92f116fa2bcb39f824338c4918b5edb"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/spear-of-shojin2.png?v=74",
+      "file": "assets/tft/images/game-items/set18/spear-of-shojin2.png",
+      "type": "image/webp",
+      "bytes": 9690,
+      "sha256": "8f7ff7603960ec7d63944b2aa966169157280b68bb7cb9388ef8bd6a0c9d5a15"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/spiritvisage.png",
+      "file": "assets/tft/images/game-items/set18/spiritvisage.png",
+      "type": "image/png",
+      "bytes": 372470,
+      "sha256": "481fdc958a44cf6ec3bc7b4c4d7f5234ba19810ab971a7a55af706cdeaecfea2"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/steadfast-hammer.png?v=74",
+      "file": "assets/tft/images/game-items/set18/steadfast-hammer.png",
+      "type": "image/webp",
+      "bytes": 17748,
+      "sha256": "4fa7fa24d827e4559999c24b3ea659fd8563287857db04dfa3f5c90a96e8fc88"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/sterak's-gage.png",
+      "file": "assets/tft/images/game-items/set18/sterak's-gage.png",
+      "type": "image/png",
+      "bytes": 2861,
+      "sha256": "2df133eb4318b952f57f66652385974501c2bcc38b46e08f5fe60127548a85e8"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/tear-of-the-goddess.png",
+      "file": "assets/tft/images/game-items/set18/tear-of-the-goddess.png",
+      "type": "image/png",
+      "bytes": 3183,
+      "sha256": "562b02b8c8db23912860f264369fd546ff2d3e779cd9078bc52c3e124afa2e88"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/thiefs-gloves.png",
+      "file": "assets/tft/images/game-items/set18/thiefs-gloves.png",
+      "type": "image/png",
+      "bytes": 2168,
+      "sha256": "f0b31ade9d2cf0dfadeb5f3f4a6746b00661ba7e8b6eac1cd30c6f295394f1ff"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/titans-resolve.png",
+      "file": "assets/tft/images/game-items/set18/titans-resolve.png",
+      "type": "image/png",
+      "bytes": 7862,
+      "sha256": "249592223ed7978df91920422c272f0ee13c7cf5d2b6cacdcd4c4533c880c9d3"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/voidstaff.png",
+      "file": "assets/tft/images/game-items/set18/voidstaff.png",
+      "type": "image/png",
+      "bytes": 285484,
+      "sha256": "2581b1471edb45f79331255de7ba3829594c4128bca84563331200a5b661545c"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/game-items/set18/warmogs-armor.png?v=74",
+      "file": "assets/tft/images/game-items/set18/warmogs-armor.png",
+      "type": "image/webp",
+      "bytes": 2272,
+      "sha256": "208543e15cff7124eda1c9e0de5340f060538f51c919fa252931e9b9ab8eaf6e"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/generated-landing-pages/homepage/Set-9-download/banner-download-tft-overlay-1000.png",
+      "file": "assets/tft/images/generated-landing-pages/homepage/Set-9-download/banner-download-tft-overlay-1000.png",
+      "type": "image/webp",
+      "bytes": 24838,
+      "sha256": "24af5a864c59bfeb61aee5ac4927548feb8d1bb6c784437a03131bbe2be11be5"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/big-grab-bag.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/big-grab-bag.webp",
+      "type": "image/webp",
+      "bytes": 20978,
+      "sha256": "e791bde946e61fe9bed4afa480f70caa7fd012b379bf69999c2420157d48fab9"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/birthday-reunion.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/birthday-reunion.webp",
+      "type": "image/webp",
+      "bytes": 31238,
+      "sha256": "0433317a613bf3e44e891f6cdbdd27bb3ff4945c110f24278967d660260c8621"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/bladeoverflow_iii.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/bladeoverflow_iii.webp",
+      "type": "image/webp",
+      "bytes": 33526,
+      "sha256": "a882e17e2fe53417cb4d9d3d970425ec3ad2bba1f9783524354d9cbe5ecfca42"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/bronzeforlife_iii.webp",
+      "file": "assets/tft/images/hextech-augments/set18/bronzeforlife_iii.webp",
+      "type": "image/webp",
+      "bytes": 33706,
+      "sha256": "bbec5cea0a3cbdb313bcb2958be9ff66241f99f645f9b3a09b8bb7bf5013bc8e"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/building-an-army-i.webp",
+      "file": "assets/tft/images/hextech-augments/set18/building-an-army-i.webp",
+      "type": "image/webp",
+      "bytes": 21168,
+      "sha256": "a78ddfb49ff20d10d687cf4da134b96721cfc285f616a81b59b7afe569a8a37d"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/buriedtreasures3.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/buriedtreasures3.webp",
+      "type": "image/webp",
+      "bytes": 15208,
+      "sha256": "a22cbf0bc89607bcc498ad57cf7ebe4bebd161910d40460df55adbd8d96ce608"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/coven-acolyte.webp",
+      "file": "assets/tft/images/hextech-augments/set18/coven-acolyte.webp",
+      "type": "image/webp",
+      "bytes": 24050,
+      "sha256": "53c27b97c8b341468124beb9840709f0093164a185ec3758789f36a0d49d9f97"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/dark-ritual.webp",
+      "file": "assets/tft/images/hextech-augments/set18/dark-ritual.webp",
+      "type": "image/webp",
+      "bytes": 22494,
+      "sha256": "8a5a9096f66c1f894028426dc29622f95bd9d840b0d52e130d1981786e9d028e"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/epic-rolldown.webp",
+      "file": "assets/tft/images/hextech-augments/set18/epic-rolldown.webp",
+      "type": "image/webp",
+      "bytes": 35436,
+      "sha256": "4445c4720450f798d8f7ae21bc74a06c594b333111450b75165c9b845be91860"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/epoch.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/epoch.webp",
+      "type": "image/webp",
+      "bytes": 17788,
+      "sha256": "5e91e17a3c34d85a0f814e26318e2b5ab41ee9e79226db0be6d3700ac01b6866"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/focused-fire.webp",
+      "file": "assets/tft/images/hextech-augments/set18/focused-fire.webp",
+      "type": "image/webp",
+      "bytes": 27424,
+      "sha256": "d4c9e00f418e78919e51dce8616ad7c73f5c1a986c9d4756b9399415c7fbb612"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/goldenticket.webp",
+      "file": "assets/tft/images/hextech-augments/set18/goldenticket.webp",
+      "type": "image/webp",
+      "bytes": 11904,
+      "sha256": "951512a17e22d0f7c3f252e0527f6b2cb7f1b56623e76eb934c88f2679b71f5d"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/heroic-grab-bag.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/heroic-grab-bag.webp",
+      "type": "image/webp",
+      "bytes": 17056,
+      "sha256": "6a3cc1c58e829380fb4e42a0590afb43bf2d2b256f8951861887fbdc43638cc4"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/late-game-scaling.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/late-game-scaling.webp",
+      "type": "image/webp",
+      "bytes": 31894,
+      "sha256": "bd5e3f6270cd5ce3e70192350613dff6158f13483835b643ea7bbb9d01fc04da"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/lategamespecialist1.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/lategamespecialist1.webp",
+      "type": "image/webp",
+      "bytes": 21536,
+      "sha256": "68b10f88c5567191ea705acb7cedb2175ad74aedc61c5147307bc8431cbdeacb"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/levelup.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/levelup.webp",
+      "type": "image/webp",
+      "bytes": 8378,
+      "sha256": "20394b868352845fad96dd0082a8e916a7aae6967336f039a721aa14effaa49d"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/missed-connections-i.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/missed-connections-i.webp",
+      "type": "image/webp",
+      "bytes": 19676,
+      "sha256": "24f4a167a957615db88cbaba5737e155ad3caa2ca9103ec161776f175308e1db"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/omega-riftbeast.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/omega-riftbeast.webp",
+      "type": "image/webp",
+      "bytes": 23936,
+      "sha256": "62fc7b594d26bf21651826cbf9e4d57646271d9a43f00d486172468933e63108"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/pandorasbench1.webp",
+      "file": "assets/tft/images/hextech-augments/set18/pandorasbench1.webp",
+      "type": "image/webp",
+      "bytes": 19898,
+      "sha256": "c838744dd64c7da963c229b1b5a2b4947eb635b3c23f2bc8580911f615a0026b"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/retribution.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/retribution.webp",
+      "type": "image/webp",
+      "bytes": 32608,
+      "sha256": "e6903dbbfd9e7a115a240af57cedb1c094ba955a8b16dbab86526ffbfeef3b6d"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/slammin.webp",
+      "file": "assets/tft/images/hextech-augments/set18/slammin.webp",
+      "type": "image/webp",
+      "bytes": 15036,
+      "sha256": "6b40667f5bb8c4ecbe61654e481b6f7eb4e8358f0d41379b24381648fb2c4f95"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/slightly-magic-roll.webp",
+      "file": "assets/tft/images/hextech-augments/set18/slightly-magic-roll.webp",
+      "type": "image/webp",
+      "bytes": 25134,
+      "sha256": "0f289dc478bdd5aa07cf45407d4e1fca6367ec27359edf78d300257eaa06aeb3"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/small-grab-bag.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/small-grab-bag.webp",
+      "type": "image/webp",
+      "bytes": 27696,
+      "sha256": "8a81e93ff4355c8f2434319a433a9a5477c5f652abf549de20b9b14687394b52"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/solo-plate.webp",
+      "file": "assets/tft/images/hextech-augments/set18/solo-plate.webp",
+      "type": "image/webp",
+      "bytes": 23288,
+      "sha256": "816a690afba3f3a8c2cb04b68ca78b2439a84816cd3a4dc1b64dae89a8552a27"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/tft_augment_cognitivetaxplus.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/tft_augment_cognitivetaxplus.webp",
+      "type": "image/webp",
+      "bytes": 30462,
+      "sha256": "b8b78deddb99ffb8539aa5cc59a9b1e9665b7d9d659db3b34e5abfd1aaa82919"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/tft_augment_expedition.webp",
+      "file": "assets/tft/images/hextech-augments/set18/tft_augment_expedition.webp",
+      "type": "image/webp",
+      "bytes": 34706,
+      "sha256": "e1d4dfae5b036feb7a749b2bd6a2e6f23ac8586d76b46f567e5d14d54e038c83"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/tft_augment_feelinglucky.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/tft_augment_feelinglucky.webp",
+      "type": "image/webp",
+      "bytes": 24756,
+      "sha256": "94a40d7bfa126f69afff80904039a77f18a15e7e368afbe08394d98fa834b252"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/tft_augment_goldengamble.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/tft_augment_goldengamble.webp",
+      "type": "image/webp",
+      "bytes": 45456,
+      "sha256": "f2f4b7cdd8da0eae76ea46ca67ab776324fea0b783261566572fd513177e92de"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/tft_augment_grouphug2.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/tft_augment_grouphug2.webp",
+      "type": "image/webp",
+      "bytes": 30860,
+      "sha256": "b9845ebf90221052567f4d9442949461a4c525b981559662a3e8b4b7e2ef0900"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/tft_augment_thebaronslair.webp",
+      "file": "assets/tft/images/hextech-augments/set18/tft_augment_thebaronslair.webp",
+      "type": "image/webp",
+      "bytes": 38066,
+      "sha256": "6cfa68163d80098ce52c2a62e9e8212c21a10847ff194aea6d6e6a5e223ba583"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/upward-mobility.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/upward-mobility.webp",
+      "type": "image/webp",
+      "bytes": 15988,
+      "sha256": "d1ea9a99154c6dd934d360a808daa2cf94fb5829bb4c12cffd73702f73aa2bf0"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/verticality-ii.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/verticality-ii.webp",
+      "type": "image/webp",
+      "bytes": 24708,
+      "sha256": "add08b89958748eeb0b5e4a74e6cfbc550cbfced125102eab5d3447ad99e2581"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/verticality-iii.webp?v=74",
+      "file": "assets/tft/images/hextech-augments/set18/verticality-iii.webp",
+      "type": "image/webp",
+      "bytes": 26222,
+      "sha256": "d25c59159fddfc3e1bf6b193610e45d5c94d37d387bcb04ef75221f4125e18cd"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/hextech-augments/set18/worth-the-wait-ii.webp",
+      "file": "assets/tft/images/hextech-augments/set18/worth-the-wait-ii.webp",
+      "type": "image/webp",
+      "bytes": 14546,
+      "sha256": "fbb94feb6271500af560f44b3dc1aee23a10c7da2966e4351574e168ccf74f30"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/page-background/tft-header-widget-bg.png",
+      "file": "assets/tft/images/page-background/tft-header-widget-bg.png",
+      "type": "image/png",
+      "bytes": 31060,
+      "sha256": "c0675458ea1880ffe45ba6ebe9c8a78345b3c166ac28e38666f655b6b40f34c5"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/rarity/cost-5.png",
+      "file": "assets/tft/images/rarity/cost-5.png",
+      "type": "image/png",
+      "bytes": 2305,
+      "sha256": "d4a44ce60c2a042c505d079ce7fd20d4182ba6da304544ad0d5c56eab420c8ce"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/set-backgrounds/set-18-enchanted-wilds.png?v=74",
+      "file": "assets/tft/images/set-backgrounds/set-18-enchanted-wilds.png",
+      "type": "image/webp",
+      "bytes": 22476,
+      "sha256": "562485d4f6321022986a90ecfbac459a3abfe5486b95876ff0087456f6acb943"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/summoned-units/set18/lifebloom.png?v=74",
+      "file": "assets/tft/images/summoned-units/set18/lifebloom.png",
+      "type": "image/webp",
+      "bytes": 17282,
+      "sha256": "69a89099a57899e3e34bb6456c2a8f37fba15e0105b834d0c004011f3335904e"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/summoned-units/set18/tree.png",
+      "file": "assets/tft/images/summoned-units/set18/tree.png",
+      "type": "image/png",
+      "bytes": 38768,
+      "sha256": "b5e73128d3e408e6ec73eae265fd3b80c2ea0ceb7cdcbf6fe96c9043b06bca4e"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/synergies-badges/BRONZE.png",
+      "file": "assets/tft/images/synergies-badges/BRONZE.png",
+      "type": "image/png",
+      "bytes": 714,
+      "sha256": "bf44249d502b7f8d649eded1a19fdb4b2e1d69e4269fba3ced2959dfe877a98e"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/synergies-badges/GOLD.png",
+      "file": "assets/tft/images/synergies-badges/GOLD.png",
+      "type": "image/webp",
+      "bytes": 910,
+      "sha256": "97a2c73f31ceb53d3d4586126e552d6ce6cf7440b3d23d4a49d622b531aa8164"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/synergies-badges/ORANGE.png",
+      "file": "assets/tft/images/synergies-badges/ORANGE.png",
+      "type": "image/png",
+      "bytes": 1047,
+      "sha256": "545454d7ac37d2d8e9adede58a32d3c503d299600e1d319ce1faba23d62ddc1b"
+    },
+    {
+      "source": "https://cdn.mobalytics.gg/assets/tft/images/synergies-badges/SILVER.png",
+      "file": "assets/tft/images/synergies-badges/SILVER.png",
+      "type": "image/png",
+      "bytes": 656,
+      "sha256": "a66a48c601bef264fb28b2085d73fec5ba2c7fdbf24e77fd326162fe1a2702d2"
+    }
+  ]
+}

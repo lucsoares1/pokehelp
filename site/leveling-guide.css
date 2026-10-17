@@ -1,0 +1,82 @@
+.leveling-guide{grid-column:1/-1;margin-top:0;border-top:1px solid #6f5a30}
+.leveling-guide>summary{cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 0 18px;font-size:18px;list-style:none}
+.leveling-guide>summary::-webkit-details-marker{display:none}
+.leveling-guide>summary>span:first-child{font-weight:700;color:var(--gold)}
+.leveling-guide>summary small{display:block;color:var(--muted);font-size:11px;font-weight:400;margin-top:6px}
+.leveling-guide>summary>span:last-child{display:flex;gap:10px;align-items:center;color:var(--muted);font-size:12px}
+.leveling-guide>summary b{font-size:20px;line-height:16px;transition:transform .18s ease}
+.leveling-guide[open]>summary b{transform:rotate(180deg)}
+.leveling-guide-content{padding:0;color:var(--muted);font-size:13px;line-height:21px}
+.guide-introduction>b{font-size:16px;color:var(--text)}
+.guide-introduction>span{display:block;color:var(--muted);font-size:10px;margin-top:0}
+.guide-introduction p{max-width:75ch;margin:8px 0 20px;font-size:12px;line-height:20px}
+.guide-controls{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.guide-controls label{font-size:11px;color:var(--muted);display:grid;gap:4px;max-width:100%}
+.guide-controls select{min-width:230px;max-width:100%;font-size:12px;background:#212630;border:1px solid #545765;border-radius:5px;padding:10px;color:var(--text)}
+.guide-strategy{display:grid;gap:3px}
+.guide-strategy>b{font-size:14px;color:var(--text)}
+.guide-strategy>span{font-size:11px;color:var(--gold)}
+.leveling-guide .guide-strategy-reason{font-size:12px;line-height:20px;max-width:75ch;margin:14px 0 20px}
+.guide-levels{display:flex;gap:6px;margin:22px 0 20px}
+.guide-levels>button{position:relative;flex:1;min-width:0;text-align:center;background:#1b202b;color:var(--muted);padding:8px 4px 10px;border:1px solid #383d4a;border-radius:6px;transition:background .16s ease-out,border-color .16s ease-out}
+.guide-levels>button:hover{background:#2c303c;border-color:#8a7852}
+.guide-levels>button[aria-pressed=true]{border-color:var(--gold);background:#353021;color:#ffdb7b}
+.guide-levels small,.guide-levels span{display:block;font-size:10px;line-height:16px}
+.guide-levels b{display:block;font-family:Oswald,sans-serif;font-size:25px;font-weight:500;line-height:34px}
+.guide-levels span{font-size:9px;white-space:nowrap}
+.guide-current-step{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px}
+.guide-step-title{display:flex;gap:16px;justify-content:space-between;align-items:center}
+.leveling-guide h4{color:var(--text);font-size:13px;margin:0 0 12px;font-weight:500}
+.guide-step-title h4{margin-bottom:0;font-size:15px}
+.guide-step-title>span{color:color-mix(in srgb,var(--rarity) 65%,#fff);font-size:12px;font-weight:700;white-space:nowrap}
+.guide-current-step>p{max-width:75ch;margin:12px 0 22px;font-size:12px;line-height:20px}
+.guide-roster{display:flex;gap:18px 14px;flex-wrap:wrap;padding:8px 0 14px}
+.guide-unit{width:70px;flex:none;text-align:center;font-size:9px;line-height:14px}
+.guide-unit>.roster-unit{max-width:70px;width:70px}
+.guide-unit .unit-medallion{width:52px}
+.guide-unit .medallion-stars{font-size:7px;line-height:10px}
+.guide-unit .roster-name{font-size:10px}
+.guide-unit .roster-items{display:none}
+.guide-unit .roster-name{margin-top:4px}
+.guide-unit .roster-portrait{image-rendering:pixelated}
+.guide-unit>small{display:block;color:var(--gold);font-size:9px;margin-top:4px}
+.guide-unit>span{display:block;color:var(--muted);font-size:9px;overflow-wrap:anywhere}
+.guide-unit.is-temporary>small{color:var(--muted)}
+.guide-unit.is-temporary .unit-medallion-frame{background:color-mix(in srgb,var(--unit-border) 65%,#757780)}
+.leveling-guide .guide-hint,.guide-economy small{font-size:11px;line-height:18px;color:var(--muted);max-width:75ch}
+.guide-current-step>.guide-hint{margin-bottom:0}
+.guide-step-synergies{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0}.guide-step-synergies>span{display:flex;align-items:center;gap:6px;font-size:11px;padding:6px 8px;border:1px solid var(--line);border-radius:7px;color:var(--muted)}.guide-step-synergies>span.is-active{background:var(--surface-raised);border-color:var(--control-border);color:var(--text)}.guide-step-synergies img{width:18px;height:18px}
+.guide-transitions,.guide-step-conditions{font-size:12px;line-height:1.8;margin:16px 0}.guide-transitions>b{color:var(--accent)}.guide-transitions ul,.guide-step-conditions ul{padding-left:20px;margin:7px 0}.guide-step-conditions summary{cursor:pointer;color:var(--accent);font-weight:700;padding:6px 0}
+.guide-economy{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(220px,1fr);gap:28px;margin:24px 0}
+.guide-economy-help{font-size:12px;padding:0 20px 0 0}
+.guide-economy-help>summary{cursor:pointer;color:var(--text);line-height:22px;min-height:32px}
+.guide-economy p{font-size:12px;line-height:20px;margin:10px 0;max-width:75ch}
+.guide-economy b{color:var(--text);font-weight:500}
+.guide-xp-calculator{border-left:1px solid var(--line);padding-left:24px}
+.guide-xp-calculator label{display:grid;gap:8px;font-size:12px}
+.guide-xp-calculator input{width:100px;max-width:100%;background:var(--surface-raised);border:1px solid var(--control-border);border-radius:3px;padding:8px;color:var(--text);font:inherit}
+.guide-xp-result{color:var(--gold);font-weight:500}
+.guide-targets,.guide-odds,.guide-method{margin-top:20px;border-top:1px solid var(--line);padding-top:14px}
+.leveling-guide :is(.guide-targets,.guide-odds,.guide-method)>summary{cursor:pointer;font-size:12px;color:var(--text);min-height:28px;width:fit-content}
+.guide-target-list{display:grid;gap:0}
+.guide-target{display:grid;grid-template-columns:40px minmax(0,1fr) 80px;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.guide-target img{width:40px;height:40px;image-rendering:pixelated;object-fit:contain;border-radius:50%}
+.guide-target b{font-size:12px;color:var(--text)}
+.guide-target p{font-size:11px;line-height:18px;margin:4px 0}
+.guide-target small{font-size:10px;color:var(--muted);line-height:17px;display:block}
+.guide-target label{display:flex;align-items:center;gap:6px;font-size:10px;white-space:nowrap;cursor:pointer;min-height:32px}
+.guide-target input{accent-color:var(--gold)}
+.guide-target.is-obtained>b,.guide-target.is-obtained>div>b{color:var(--gold)}
+.guide-table-scroll{overflow-x:auto;margin:12px 0}
+.guide-table-scroll table{border-collapse:collapse;width:100%;font-size:11px;white-space:nowrap}
+.guide-table-scroll caption{text-align:left;color:var(--muted);font-size:10px;padding-bottom:8px}
+.guide-table-scroll th,.guide-table-scroll td{padding:9px 8px;text-align:center;border-bottom:1px solid var(--line)}
+.guide-table-scroll th:first-child{text-align:left}
+.guide-table-scroll th[style]{color:color-mix(in srgb,var(--rarity) 65%,#fff)}
+.guide-table-scroll tr.is-current{background:var(--surface-raised)}
+.guide-method p{font-size:11px;line-height:18px;max-width:100ch}
+.guide-method a{color:var(--gold);font-size:11px}
+.leveling-guide :is(button,a,summary,input,select):focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@container(max-width:760px){.guide-levels{flex-wrap:wrap;border:0;gap:6px}.guide-levels>button{flex:0 0 calc((100% - 18px)/4)}.guide-economy{grid-template-columns:1fr;gap:20px}.guide-xp-calculator{border-left:0;border-top:1px solid var(--line);padding:20px 0 0}.guide-target{grid-template-columns:32px minmax(0,1fr) 70px;gap:8px}.guide-target img{width:32px;height:32px}.guide-controls{gap:14px}}
+@container(max-width:480px){.leveling-guide>summary{gap:12px;font-size:16px}.leveling-guide>summary>span:last-child{font-size:10px;gap:6px}.leveling-guide>summary small{font-size:10px;line-height:16px}.guide-levels b{font-size:23px}.guide-step-title{align-items:flex-start;flex-direction:column;gap:8px}.guide-current-step{padding:16px 12px}.guide-roster{gap:18px 7px}.guide-unit{width:62px}.guide-unit>.roster-unit{max-width:62px;width:62px}.guide-target{grid-template-columns:32px minmax(0,1fr)}.guide-target label{grid-column:2;min-height:24px}.guide-controls select{min-width:0;width:100%}.guide-controls label{width:100%}}
+@media(prefers-reduced-motion:reduce){.leveling-guide>summary b,.guide-levels>button{transition:none}}

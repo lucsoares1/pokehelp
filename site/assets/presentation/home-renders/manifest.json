@@ -1,0 +1,81 @@
+{
+  "reviewedAt": "2026-10-16",
+  "repository": "https://github.com/PokeAPI/sprites",
+  "revision": "ba403973fdf9d0ac59175813861e6a1f8ed5020c",
+  "description": "Normal-form Pokémon HOME 3D renders. Original transparent PNG files, no resizing, cropping, upscaling or generative edits applied.",
+  "credit": "Pokémon / Nintendo / Creatures / GAME FREAK; distributed by PokeAPI/sprites.",
+  "images": {
+    "GYARADOS": {
+      "dex": 130,
+      "src": "assets/presentation/home-renders/130.png",
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/ba403973fdf9d0ac59175813861e6a1f8ed5020c/sprites/pokemon/other/home/130.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 146223,
+      "sha256": "60867e5140838c17e09d0eb514114be0cff439e9f47b64989993043ce787e5b6"
+    },
+    "UMBREON": {
+      "dex": 197,
+      "src": "assets/presentation/home-renders/197.png",
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/ba403973fdf9d0ac59175813861e6a1f8ed5020c/sprites/pokemon/other/home/197.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 117971,
+      "sha256": "263c504663419d5b87170e608fb0e5cf01887bd1c2bc65d35a77aee1f5da78dd"
+    },
+    "LICKILICKY": {
+      "dex": 463,
+      "src": "assets/presentation/home-renders/463.png",
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/ba403973fdf9d0ac59175813861e6a1f8ed5020c/sprites/pokemon/other/home/463.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 132799,
+      "sha256": "fab50f8fe45349caee405bb0cc0031a9c291c13446823b3edf34295b1205706e"
+    },
+    "CARNIVINE": {
+      "dex": 455,
+      "src": "assets/presentation/home-renders/455.png",
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/ba403973fdf9d0ac59175813861e6a1f8ed5020c/sprites/pokemon/other/home/455.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 114009,
+      "sha256": "8838a3d0c1af2a2b00c9272aa520890fea741902de16b917b4c51edd0d87e546"
+    },
+    "GARCHOMP": {
+      "dex": 445,
+      "src": "assets/presentation/home-renders/445.png",
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/ba403973fdf9d0ac59175813861e6a1f8ed5020c/sprites/pokemon/other/home/445.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 138982,
+      "sha256": "4f5491ca2cf8db922f1bc3e960f9b83c7034d6b8c574674a6a5b69339d114252"
+    },
+    "LUCARIO": {
+      "dex": 448,
+      "src": "assets/presentation/home-renders/448.png",
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/ba403973fdf9d0ac59175813861e6a1f8ed5020c/sprites/pokemon/other/home/448.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 103778,
+      "sha256": "4c034a663b3110274605a3d3b8d212fe1380c1d147998e6c0e181382424454d3"
+    },
+    "SPIRITOMB": {
+      "dex": 442,
+      "src": "assets/presentation/home-renders/442.png",
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/ba403973fdf9d0ac59175813861e6a1f8ed5020c/sprites/pokemon/other/home/442.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 151456,
+      "sha256": "1d22dccb4d46b1591232a503407a53aa9023dce196b8e7b8d898c3e935d3065e"
+    },
+    "TYRANITAR": {
+      "dex": 248,
+      "src": "assets/presentation/home-renders/248.png",
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/ba403973fdf9d0ac59175813861e6a1f8ed5020c/sprites/pokemon/other/home/248.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 147878,
+      "sha256": "771eddd5177c3328a4b71768332d7523cc0df8d24fc837924255acafda94d7ed"
+    }
+  }
+}
