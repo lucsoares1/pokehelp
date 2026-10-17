@@ -22,7 +22,11 @@
   <link rel="stylesheet" href="overlay.css">
   <script type="module" src="main.mjs"></script>
 </head>
-<body>
+<body class="is-home">
+  <script>
+    // Set the route layout before any content paints, without waiting for game data.
+    document.body.classList.toggle('is-home',(location.hash.slice(1)||'home').split('/')[0]==='home');
+  </script>
   <a class="skip-link" href="#main">Ir para o conteúdo</a>
   <header class="top-bar">
     <a href="#home" class="brand" aria-label="PokeChess Helper — início"><img class="brand-logo" src="assets/brand/logo.png" alt="" width="34" height="34"><span class="helper-brand">PokeChess <small>HELPER</small></span></a>

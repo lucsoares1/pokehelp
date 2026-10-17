@@ -1,5 +1,11 @@
 # Registro de decisões
 
+## D067 — Layout da home definido antes do primeiro conteúdo
+
+Usuário relatou flash do aside “Dados do jogo / Guia rápido” ao abrir ou recarregar a página. A classe is-home só era aplicada por setVisible depois de loadGameData/report, deixando o primeiro desenho com grid e coluna de 334 px. index.html agora entrega o body com o estado padrão da home e ajusta a classe por hash em um script síncrono antes do conteúdo. CSS, renderização de rotas, navegação e painéis das demais telas preservados; não há ocultação da página inteira, timeout ou requisição adicional.
+
+QA no navegador com main.mjs deliberadamente indisponível: antes, aside=grid e colunas 831px/334px; depois, aside=none e layout=block ainda com “Preparando seu guia…”. Abertura direta em #compositions mantém o grid, enquanto raiz e #home/explore iniciam sem aside. npm run check: 96 arquivos; npm test: 182/182. Sem alteração da extensão ou snapshot mecânico.
+
 ## D066 — Build estático reproduzível para Vercel e origem pública do Helper
 
 Usuário conectou o GitHub à Vercel e informou 404 em https://pokehelp-one.vercel.app/. Repositório não tinha build/output configurados e os snapshots/imagens gerados estavam ignorados. vercel.json publica somente dist, gerado por npm run build. Sem servidor Node na produção, rewrite amplo para HTML ou importação de dados ao vivo em cada deploy. Configuração e Node 24 conferidos na documentação oficial da Vercel: https://vercel.com/docs/project-configuration/vercel-json e https://vercel.com/docs/functions/runtimes/node-js/node-js-versions.

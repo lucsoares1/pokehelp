@@ -1,5 +1,11 @@
 # Status do PokeChess Helper
 
+## Flash do aside na abertura da home — D067
+
+Corrigido no HTML inicial, antes de aguardar módulos/dados: body começa em is-home e um script síncrono anterior ao conteúdo respeita a rota do hash. Home passa a iniciar com layout de largura inteira e aside oculto; demais rotas mantêm o layout existente. Não esconde o documento nem adiciona temporizador/requisição.
+
+QA isolado com main.mjs indisponível reproduziu o defeito e confirmou a correção sem depender da rede de dados: aside grid / coluna 334px antes; aside none / layout block depois. Raiz e #home/explore corrigidos; abertura direta de #compositions preservada. Verificações: sintaxe 96 arquivos, 182/182 testes. Extensão permanece 0.18.1 e snapshot preservado.
+
 ## Publicação Vercel — D066, extensão 0.18.1
 
 404 reproduzido por HTTP em https://pokehelp-one.vercel.app/. Causa local identificada: ausência de configuração de build/output e dados/imagens ignorados no Git. vercel.json agora define build npm run build e saída dist; raiz do projeto deve ser ./, sem framework. Snapshot revisado ativo compactado em data/deployment/site-snapshot.json.gz (2.802 arquivos, 8,92 MB), com hashes e licença. Build restaura apenas esse snapshot, valida tudo e monta o ZIP 0.18.1 usando exatamente os mesmos IDs. Não depende de caches locais, dados ao vivo ou variáveis de ambiente. Imagens/vídeo de apresentação vêm dos assets versionados; servidor local e releases antigas ficam fora da saída.
