@@ -1,5 +1,12 @@
 # Registro de decisões
 
+## D066 — Build estático reproduzível para Vercel e origem pública do Helper
+
+Usuário conectou o GitHub à Vercel e informou 404 em https://pokehelp-one.vercel.app/. Repositório não tinha build/output configurados e os snapshots/imagens gerados estavam ignorados. vercel.json publica somente dist, gerado por npm run build. Sem servidor Node na produção, rewrite amplo para HTML ou importação de dados ao vivo em cada deploy. Configuração e Node 24 conferidos na documentação oficial da Vercel: https://vercel.com/docs/project-configuration/vercel-json e https://vercel.com/docs/functions/runtimes/node-js/node-js-versions.
+
+Pacote gzip JSON versionado contém o snapshot público ativo 6.11.1-1522996091db4308, arquivos de dados, imagens e licença. Preparação explícita com deploy:snapshot valida o manifesto já revisado; restauração verifica caminhos, duplicatas, tamanho/hash por arquivo e manifesto. Build cria dist isolado e gera o ZIP da extensão com a mesma revisão, sem alterar site/data/current.json local. Cache, fontes brutas, outras releases e servidor local não são publicados. Nenhuma nova dependência.
+
+Extensão 0.18.1 aceita somente o domínio público exato, mantendo origens locais. Origem importada preservada para retorno; padrão de nova instalação passa ao site público. Manifesto/ponte/protocolo e aviso de versão do site ajustados. Testes incluem restauração sem fontes locais, corrupção/caminho indevido e ponte pública/origens falsas. Nenhuma permissão ampla em vercel.app ou alteração em ações do jogo.
 ## D065 — Avaliação imediata do campo separada do caminho da comp
 
 Pedido humano autoriza manter Entra/Sai do planejamento e acrescentar aviso de melhor opção com base no campo/banco reais. O cálculo anterior misturava força/sinergias com bônus de cobertura da comp/guia, podendo esconder reforços disponíveis fora da meta. board-model agora mantém liveSuggestion e planSuggestion: o primeiro não usa cobertura/afinidade do plano, o segundo mantém famílias e provisórios por nível. Sugestão principal prefere melhora imediata clara; limiar evita pequenas oscilações. Sem novos dados ou permissões, somente formação própria já lida.

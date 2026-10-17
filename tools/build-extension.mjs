@@ -5,7 +5,7 @@ import {deflateRawSync} from 'node:zlib';
 import {createOverlayPlan,selectionKey} from '../site/lib/overlay-model.mjs';
 import {UI_ICON_FILES} from '../site/lib/ui-icons.mjs';
 import {variantsFor} from '../site/lib/composition-model.mjs';
-const workspace=resolve(import.meta.dirname,'..'),site=resolve(workspace,'site'),out=resolve(workspace,'extension/dist');
+const workspace=resolve(import.meta.dirname,'..'),site=resolve(process.env.PCH_BUILD_SITE_ROOT??resolve(workspace,'site')),out=resolve(process.env.PCH_BUILD_EXTENSION_OUT??resolve(workspace,'extension/dist'));
 const read=async path=>JSON.parse(await readFile(resolve(site,path),'utf8'));
 const pointer=await read('data/current.json'),base=pointer.base;
 const [manifest,pokemons,items,synergies,compositions,teamRules,progression]=await Promise.all(['manifest.json','catalog/pokemons.json','catalog/items.json','catalog/synergies.json','compositions.json','catalog/team-rules.json','catalog/progression.json'].map(p=>read(base+p)));

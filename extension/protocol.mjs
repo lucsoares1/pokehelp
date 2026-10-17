@@ -1,14 +1,14 @@
 import {nativePlannerBoard} from './shop-model.mjs';
 import {createPortalContext} from './portal-model.mjs';
 export const STATE_KEY='pokechess-game-overlay-v1';
-export const EXTENSION_VERSION='0.18.0';
+export const EXTENSION_VERSION='0.18.1';
 export const GAME_ORIGIN='https://pokemon-auto-chess.com';
-export const HELPER_ORIGINS=['http://127.0.0.1:4173','http://localhost:4173'];
+export const HELPER_ORIGINS=['http://127.0.0.1:4173','http://localhost:4173','https://pokehelp-one.vercel.app'];
 export const referenceKey=s=>`${s.compId}@${s.snapshotId}~${s.variantIndex}`;
 export function isGameUrl(value){try{return new URL(value).origin===GAME_ORIGIN;}catch{return false;}}
 export function helperOrigin(value){try{const u=new URL(value);return HELPER_ORIGINS.includes(u.origin)&&['/','/index.html'].includes(u.pathname)?u.origin:null;}catch{return null;}}
 export function validSelection(s){return !!s&&typeof s.compId==='string'&&/^[\w.-]{1,100}$/.test(s.compId)&&typeof s.snapshotId==='string'&&/^[\w.-]{1,100}$/.test(s.snapshotId)&&Number.isInteger(s.variantIndex)&&s.variantIndex>=0&&s.variantIndex<=500;}
-export const initialState=()=>({schemaVersion:1,selection:null,obtained:[],shopEnabled:false,minimized:false,closed:false,position:null,theme:'dark',guideLevel:2,helperOrigin:HELPER_ORIGINS[0]});
+export const initialState=()=>({schemaVersion:1,selection:null,obtained:[],shopEnabled:false,minimized:false,closed:false,position:null,theme:'dark',guideLevel:2,helperOrigin:HELPER_ORIGINS.at(-1)});
 export function normalizeState(value,plans){
   const empty=initialState();if(value?.schemaVersion!==1)return empty;
   const selection=validSelection(value.selection)&&Object.hasOwn(plans,referenceKey(value.selection))?value.selection:null;

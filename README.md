@@ -21,6 +21,19 @@ npm run dev
 
 Acesse <http://127.0.0.1:4173/>. Node.js 24+. Os dados já importados ficam em `site/data/`. O navegador consulta esses arquivos locais, sem acessar o banco privado do jogo.
 
+## Publicar na Vercel
+
+Site: <https://pokehelp-one.vercel.app/>. O `vercel.json` configura o projeto sem framework, com a raiz do repositório (`./`), `npm run build` e saída `dist`. Não configure a pasta `site` como Root Directory. Node.js 24 é compatível com o build; nenhuma variável de ambiente é necessária.
+
+```powershell
+npm ci --ignore-scripts
+npm run build
+```
+
+O build restaura `data/deployment/site-snapshot.json.gz`, verifica os hashes dos dados/imagens e gera o site e o ZIP da extensão com o mesmo snapshot. Não depende dos arquivos ignorados da máquina nem importa dados novos do jogo durante um deploy. Somente `dist` é publicado; servidor local, referências históricas e cache não entram na saída.
+
+Depois de atualizar e revisar os dados com `data:import`, execute `npm run deploy:snapshot` e inclua o pacote atualizado no commit. O pacote contém apenas o snapshot público ativo, imagens e licença de origem. A extensão 0.18.1 aceita o domínio público exato e os dois endereços locais, mantendo os demais projetos Vercel fora da integração.
+
 ## Atualizar os dados
 
 ```powershell

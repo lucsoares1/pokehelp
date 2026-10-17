@@ -7,6 +7,8 @@
   "scripts": {
     "dev": "node site/server.mjs",
     "start": "node site/server.mjs",
+    "build": "node tools/build-site.mjs",
+    "deploy:snapshot": "node tools/prepare-deployment.mjs",
     "data:import": "node tools/import-game.mjs",
     "data:validate": "node tools/validate-data.mjs",
     "data:assets": "node tools/cache-assets.mjs",

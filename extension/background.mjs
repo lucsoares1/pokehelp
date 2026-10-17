@@ -23,5 +23,5 @@ chrome.runtime.onMessage.addListener((message,sender,reply)=>{
 chrome.action.onClicked.addListener(async tab=>{
   if(isGameUrl(tab.url)){
     try{await chrome.tabs.sendMessage(tab.id,{type:'PCH_SHOW'});}catch{await chrome.action.setBadgeText({tabId:tab.id,text:'↻'});}
-  }else await chrome.tabs.create({url:HELPER_ORIGINS[0]+'/#compositions'});
+  }else await chrome.tabs.create({url:HELPER_ORIGINS.at(-1)+'/#compositions'});
 });

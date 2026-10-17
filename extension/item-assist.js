@@ -1,5 +1,5 @@
 (()=>{
-  const CHANNEL='PCH_NATIVE_ITEMS_V1',VERSION='0.18.0';
+  const CHANNEL='PCH_NATIVE_ITEMS_V1',VERSION='0.18.1';
   globalThis.PCHItemAssist={create({onStatus=()=>{},onShopStatus=()=>{}}={}){
     const resourceBase=chrome.runtime.getURL(''),resource=path=>resourceBase+path;
     let config=null,model=null,portalModel=null,holderModel=null,choiceModel=null,shopModel=null,latest=null,advice=null,lastSummary='',lastInput='',timer=null,layer=null,shadow=null,hint=null,lastReceived=0,pointer=null,focus=null,pointerTick=0,lastShopStatus='',bridge='waiting',nativeDiagnostics={};

@@ -1,6 +1,6 @@
 (()=>{
   if(window!==top||location.origin!=='https://pokemon-auto-chess.com')return;
-  const KEY='pokechess-game-overlay-v1',CHANNEL='PCH_OVERLAY_FRAME',VERSION='0.18.0';
+  const KEY='pokechess-game-overlay-v1',CHANNEL='PCH_OVERLAY_FRAME',VERSION='0.18.1';
   const extensionId=chrome.runtime.id,resourceBase=chrome.runtime.getURL(''),resource=path=>resourceBase+path,extensionOrigin=resourceBase.replace(/\/$/,'');
   let disconnected=false,healthTimer;
   function runtimeAlive(){if(disconnected)return false;try{if(extensionId&&chrome.runtime.id!==extensionId){disconnect();return false;}return true;}catch{disconnect();return false;}}
@@ -79,7 +79,7 @@
   function startTimer(){clearTimeout(loadTimer);loadTimer=setTimeout(()=>{if(!panelReady)launcher.textContent='PokeChess · Tentar carregar overlay ↻';},6000);}
   function reloadPanel(){if(!runtimeAlive())return;panelReady=false;boardAlert=false;frame.src=resource('overlay/index.html');apply(state);startTimer();}
   launcher.addEventListener('click',()=>{
-    if(!state.selection){const origin=['http://127.0.0.1:4173','http://localhost:4173'].includes(state.helperOrigin)?state.helperOrigin:'http://127.0.0.1:4173';window.open(origin+'/#compositions','pokechess-helper','noopener');}
+    if(!state.selection){const origin=['http://127.0.0.1:4173','http://localhost:4173','https://pokehelp-one.vercel.app'].includes(state.helperOrigin)?state.helperOrigin:'https://pokehelp-one.vercel.app';window.open(origin+'/#compositions','pokechess-helper','noopener');}
     else if(state.closed)void request({type:'PCH_REOPEN'}).then(r=>{if(r?.ok)apply(r.state);}).catch(()=>{});
     else reloadPanel();
   });

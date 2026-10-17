@@ -1,5 +1,13 @@
 # Status do PokeChess Helper
 
+## Publicação Vercel — D066, extensão 0.18.1
+
+404 reproduzido por HTTP em https://pokehelp-one.vercel.app/. Causa local identificada: ausência de configuração de build/output e dados/imagens ignorados no Git. vercel.json agora define build npm run build e saída dist; raiz do projeto deve ser ./, sem framework. Snapshot revisado ativo compactado em data/deployment/site-snapshot.json.gz (2.802 arquivos, 8,92 MB), com hashes e licença. Build restaura apenas esse snapshot, valida tudo e monta o ZIP 0.18.1 usando exatamente os mesmos IDs. Não depende de caches locais, dados ao vivo ou variáveis de ambiente. Imagens/vídeo de apresentação vêm dos assets versionados; servidor local e releases antigas ficam fora da saída.
+
+Integração da extensão ajustada para a origem pública exata, preservando localhost. Domínios parecidos/outros projetos continuam rejeitados. Página inicial da extensão aponta para produção em novas instalações; importação local continua registrando seu endereço. Site deixa de pedir a versão antiga 0.11.0 e recupera o estado das versões atuais.
+
+Verificação: npm run check (96 arquivos), npm test (182/182), build/ZIP local. Exportação limpa do índice Git em .cache/vercel-clean-20261017, sem site/data/current.json, releases, retratos PAC, node_modules ou extension/dist: npm ci --ignore-scripts e npm run build concluíram com sucesso, restaurando os dados e gerando 778 equipes/1.581 imagens/ZIP 7,08 MB. Publicação remota deve usar o commit enviado; Root Directory diferente de ./ precisa ser corrigido no painel Vercel. Recarregar extensão 0.18.1 para usar a ponte pública. Snapshot mecânico preservado.
+
 ## Melhor campo agora e caminho da comp — D065, extensão 0.18.0
 
 Concluído localmente. Banco → campo mantém indicação planejada e adiciona comparação independente das peças reais, sem bônus de comp/guia. Reforço fora da comp pode ser a escolha imediata; avalia estrelas, atributos, itens, resistência de curto alcance e sinergias atuais. Opção principal é a imediata quando há melhora clara; alternativa planejada fica recolhida quando diferente, com estado aberto preservado. Mesma troca é unificada. Motivo, perdas/ganhos e aviso de desvio temporário visíveis; guarda de portador equipado e demais restrições preservadas. Aviso recolhido identifica a avaliação escolhida.

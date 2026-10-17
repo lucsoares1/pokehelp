@@ -14,9 +14,9 @@ export function wireGameOverlay({announce=()=>{}}={}){
   const local=wireOverlay(document.querySelector('#helper-overlay'),{announce,onSelect:publish,onAction:action=>void syncAction(action)});
   function feedback(text,connected=false){message.textContent=text;section.dataset.connected=String(connected);}
   function health(reply){
-    if(version&&version!=='0.11.0')return `Extensão ${version} conectada. Recarregue a versão 0.11.0 para receber campo, itens e guia atualizados.`;
+    if(version&&version!=='0.18.1')return `Extensão ${version} conectada. Recarregue a versão 0.18.1 para receber campo, itens e guia atualizados.`;
     const d=reply.game;
-    if(!d)return 'Extensão antiga conectada. Atualize/recarregue a extensão 0.11.0 para verificar a aba do jogo.';
+    if(!d)return 'Extensão antiga conectada. Atualize/recarregue a extensão 0.18.1 para verificar a aba do jogo.';
     if(d.unavailable)return 'Extensão conectada, mas não foi possível verificar o jogo. Confira o acesso da extensão a pokemon-auto-chess.com.';
     if(d.ready>0){const s=d.shop;return `Overlay carregado em ${d.ready} aba(s) do jogo.${s?.conflicts?' Destaques pausados: o planejador foi editado no jogo.':s?.synced?(s.visible?` Loja detectada · ${s.offers} oferta(s) com destaque nativo.`:' Plano preparado; aguardando a loja da partida.'):''}`;}
     if(d.connected>0)return 'Aba do jogo conectada; painel carregando ou recolhido no atalho PokeChess.';
@@ -32,8 +32,7 @@ export function wireGameOverlay({announce=()=>{}}={}){
   async function connect(){
     feedback('Verificando extensão…');const token=transfer;
     try{const reply=await requestExtension('PCH_HELLO',{},5000);version=reply.version;ready=true;feedback(health(reply),true);
-      if(['0.2.0','0.3.0','0.4.0','0.4.1','0.5.0','0.6.0','0.6.1','0.6.2','0.6.3','0.6.4','0.6.5','0.7.0','0.8.0','0.8.1','0.9.0','0.10.0','0.11.0'].includes(reply.version)&&token===transfer){const remote=await requestExtension('PCH_STATE');if(token!==transfer)return true;if(remote.state?.selection)await local.applyRemote(remote.state);else if(local.getState().selection)await publish(local.getState().selection);}
-      else if(token===transfer&&local.getState().selection)await publish(local.getState().selection);
+      if(token===transfer){const remote=await requestExtension('PCH_STATE');if(token!==transfer)return true;if(remote.state?.selection)await local.applyRemote(remote.state);else if(local.getState().selection)await publish(local.getState().selection);}
       return true;
     }catch(e){ready=false;feedback(`Overlay funciona no Helper. ${e.message}`);return false;}
   }

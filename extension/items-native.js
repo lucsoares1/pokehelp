@@ -1,7 +1,7 @@
 (()=>{
   if(window!==top||location.origin!=='https://pokemon-auto-chess.com')return;
   const CHANNEL='PCH_NATIVE_ITEMS_V1',ID=/^[A-Z][A-Z0-9_]{0,90}$/;
-  const VERSION='0.18.0';
+  const VERSION='0.18.1';
   let token=null,until=0,scene=null,timer=null,probe=null,probeTimer=null,nextProbe=0,sceneSource='waiting',diagnostics={};
   const empty=code=>({code,inventory:null,equipped:[],sources:[],portals:[],stage:null,board:null,boardMode:null,rewards:[],shop:null});
   function stopProbe(){

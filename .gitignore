@@ -11,3 +11,5 @@ site/assets/pac/*/
 *.tmp
 extension/dist/
 site/downloads/*.zip
+dist/
+.vercel/

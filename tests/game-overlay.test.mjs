@@ -36,14 +36,14 @@ test('fechar, reabrir, mover e marcar não alteram o jogo nem confundem vagas du
   await handleMessage({type:'PCH_REOPEN'},game,f.env);assert(!f.state.closed);
   await handleMessage({type:'PCH_POSITION',position:{x:-5,y:20000}},game,f.env);assert.deepEqual(f.state.position,{x:0,y:10000});
   await handleMessage({type:'PCH_PATCH',action:'reset'},panel,f.env);assert.deepEqual(f.state.obtained,[]);
-  const bad={...f.state,obtained:[0,0,1,2,-1,'1'],theme:'invalid',helperOrigin:'https://evil.test/'};const normalized=normalizeState(bad,plans);assert.deepEqual(normalized.obtained,[0,1]);assert.equal(normalized.theme,'dark');assert.equal(normalized.helperOrigin,helper.url.split('/#')[0]);
+  const bad={...f.state,obtained:[0,0,1,2,-1,'1'],theme:'invalid',helperOrigin:'https://evil.test/'};const normalized=normalizeState(bad,plans);assert.deepEqual(normalized.obtained,[0,1]);assert.equal(normalized.theme,'dark');assert.equal(normalized.helperOrigin,initialState().helperOrigin);
   assert.deepEqual(normalizeState({schemaVersion:99},plans),initialState());
 });
 test('manifesto restringe painel ao jogo e ponte ao Helper, sem acesso amplo ou código remoto',async()=>{
   const manifest=JSON.parse(await readFile(new URL('../extension/manifest.json',import.meta.url),'utf8'));
   assert.deepEqual(manifest.permissions,['storage']);assert.equal(manifest.manifest_version,3);assert.deepEqual(manifest.host_permissions,['https://pokemon-auto-chess.com/*']);assert(!manifest.externally_connectable);
   const content=manifest.content_scripts;assert.deepEqual(content[0].matches,['https://pokemon-auto-chess.com/*']);assert.equal(content[0].all_frames,false);
-  assert.deepEqual(content[1].include_globs,['http://127.0.0.1:4173/*','http://localhost:4173/*']);assert.deepEqual(manifest.web_accessible_resources[0].matches,content[0].matches);
+  assert.deepEqual(content[1].include_globs,['http://127.0.0.1:4173/*','http://localhost:4173/*','https://pokehelp-one.vercel.app/*']);assert.deepEqual(manifest.web_accessible_resources[0].matches,content[0].matches);
   assert(!manifest.content_security_policy.extension_pages.includes('unsafe-eval'));
   const native=content.find(c=>c.js.includes('items-native.js'));assert.equal(native.world,'MAIN');assert.equal(native.all_frames,false);assert.deepEqual(native.matches,content[0].matches);assert(manifest.web_accessible_resources[0].resources.includes('item-model.mjs'));assert(manifest.web_accessible_resources[0].resources.includes('portal-model.mjs'));
   const script=await readFile(new URL('../extension/game.js',import.meta.url),'utf8');let touched=false;
@@ -58,7 +58,7 @@ test('ZIP contém apenas recursos locais auditados e todas as 778 equipes utiliz
   assert(files.has('board-model.mjs'));assert(files.has('board-view.mjs'));
   for(const entry of metadata.resources){const bytes=files.get(entry.path);assert(bytes,entry.path);assert.equal(createHash('sha256').update(bytes).digest('hex'),entry.sha256,entry.path);}
   function checkImages(value){if(value&&typeof value==='object')for(const [key,item] of Object.entries(value)){if(key==='image'&&typeof item==='string')assert(files.has('overlay/'+item),item);else checkImages(item);}}checkImages(bundle.plans);
-  const manifest=JSON.parse(files.get('manifest.json'));assert.equal(manifest.version,'0.18.0');assert(files.has('diagnostic-view.mjs'));assert(files.has('shop-planner.js'));assert(files.has('shop-model.mjs'));assert(files.has('shop.css'));assert(files.has('overlay/index.html'));assert(files.has('overlay/lib/overlay-guide.mjs'));assert(bundle.guide.rules.shop);checkImages(bundle.guide.pokemons);assert(![...files.keys()].some(p=>/\.env|banner\.mp4|videobanner|history\//.test(p)));
+  const manifest=JSON.parse(files.get('manifest.json'));assert.equal(manifest.version,'0.18.1');assert(files.has('diagnostic-view.mjs'));assert(files.has('shop-planner.js'));assert(files.has('shop-model.mjs'));assert(files.has('shop.css'));assert(files.has('overlay/index.html'));assert(files.has('overlay/lib/overlay-guide.mjs'));assert(bundle.guide.rules.shop);checkImages(bundle.guide.pokemons);assert(![...files.keys()].some(p=>/\.env|banner\.mp4|videobanner|history\//.test(p)));
   checkImages(bundle.guide.items);assert(files.has('items-native.js'));assert(files.has('game-ui.js'));assert(files.has('planner-notify.js'));assert(files.has('item-assist.js'));assert(files.has('item-model.mjs'));assert(files.has('item-view.mjs'));assert(files.has('portal-model.mjs'));assert(files.has('holder-model.mjs'));checkImages(bundle.guide.synergies);assert(files.has('overlay/lib/progression-planner.mjs'));assert(files.has('overlay/lib/progression-change-view.mjs'));assert(files.has('overlay/lib/composition-model.mjs'));
   assert(files.has('overlay/lib/ui-icons.mjs'));const iconSource=JSON.parse(files.get('overlay/assets/icons/lucide/SOURCE.json'));assert.equal(iconSource.version,'1.57.0');
   for(const entry of iconSource.sources){const bytes=files.get('overlay/assets/icons/lucide/'+entry.name);assert(bytes);assert.equal(createHash('sha256').update(bytes).digest('hex'),entry.sha256);}

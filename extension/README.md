@@ -1,5 +1,11 @@
 # PokeChess Helper — extensão local
 
+## Atualização 0.18.1 — site publicado na Vercel
+
+A ponte do Helper aceita também https://pokehelp-one.vercel.app, somente a origem HTTPS exata e os caminhos raiz/index.html, além dos dois endereços locais. Outros projetos Vercel e subdomínios parecidos continuam rejeitados. Importar uma equipe pelo site público grava essa origem para os links de retorno; novas instalações abrem o site público por padrão. Recarregue a extensão e as páginas para aplicar.
+
+O build de publicação inclui o ZIP e usa o mesmo snapshot revisado do site. O diagnóstico do site reconhece a versão 0.18.1 e recupera o estado da composição das versões atuais. As recomendações de itens e campo/banco de 0.18.0 permanecem. Verificação local: 182 testes aprovados e sintaxe de 96 arquivos; validação de publicação descrita no status do projeto.
+
 ## Atualização 0.18.0 — melhor campo agora e caminho da comp
 
 O aviso Banco → campo passa a separar duas avaliações. “Melhor opção agora” compara as instâncias reais em campo e no banco sem bônus por pertencer à comp ou ao guia: estrelas, atributos base, equipamentos, patamares de sinergia e opção de curto alcance ponderada pela resistência base. Assim, um reforço fora da comp pode substituir uma peça atual. A sugestão informa motivo, ganhos/perdas e quando o reforço se afasta do planejamento. É uma estimativa conservadora, sem simulação de combate ou comparação com adversários.

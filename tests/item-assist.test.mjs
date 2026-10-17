@@ -216,7 +216,7 @@ test('Phaser de produção é descoberto no frame renderizado sem global de debu
   f.watch();assert.equal(f.messages.at(-1).snapshot.code,'waiting');assert.notEqual(prototype.forEach,descriptor.value);
   const thisArg={},calls=[];manager.pokemons.forEach(function(value,key,map){assert.equal(this,thisArg);calls.push([value,key,map]);},thisArg);
   assert.equal(calls.length,1);assert.equal(calls[0][2],manager.pokemons);assert.deepEqual(Object.getOwnPropertyDescriptor(prototype,'forEach'),descriptor);
-  f.watch();const s=f.messages.at(-1).snapshot;assert.equal(s.code,'connected');assert.equal(s.diagnostics.scene,'render-loop');assert.equal(s.diagnostics.global,false);assert.equal(s.diagnostics.nativeVersion,'0.18.0');
+  f.watch();const s=f.messages.at(-1).snapshot;assert.equal(s.code,'connected');assert.equal(s.diagnostics.scene,'render-loop');assert.equal(s.diagnostics.global,false);assert.equal(s.diagnostics.nativeVersion,'0.18.1');
 });
 
 test('sonda temporária preserva erros, rejeita mapas/canvas alheios e restaura ao desligar',()=>{
