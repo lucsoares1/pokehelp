@@ -3,7 +3,7 @@
 @font-face{font-family:Roboto;src:url('assets/fonts/roboto-700.woff2') format('woff2');font-style:normal;font-weight:700;font-display:swap}
 @font-face{font-family:Oswald;src:url('assets/fonts/oswald-500.woff2') format('woff2');font-style:normal;font-weight:500;font-display:swap}
 @font-face{font-family:Oswald;src:url('assets/fonts/oswald-700.woff2') format('woff2');font-style:normal;font-weight:700;font-display:swap}
-:root{color-scheme:dark;--page:#12121f;--top:#090911;--surface:#242435;--surface-raised:#343447;--line:#303043;--gold:#f2bf43;--gold-bright:#ffce47;--purple:#6944ff;--text:#f7f7fb;--muted:#b0b0c3;--header-height:112px;--sidebar-width:52px;--layer-sidebar:20;--layer-toolbar:30;--layer-menu:40;--layer-backdrop:35}
+:root{color-scheme:dark;--page:#12121f;--top:#090911;--surface:#242435;--surface-raised:#343447;--line:#303043;--gold:#f2bf43;--gold-bright:#ffce47;--purple:#6944ff;--text:#f7f7fb;--muted:#b0b0c3;--header-height:112px;--sidebar-width:52px;--layer-sidebar:20;--layer-toolbar:30;--layer-menu:40;--layer-backdrop:35;--layer-popover:70}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:132px}
 body{margin:0;background:var(--page);color:var(--text);font-family:Roboto,Arial,sans-serif;font-size:14px;line-height:1.5}
@@ -22,7 +22,7 @@ button{border:0}
 button:not(.icon-button):active,.gold-button:active{transform:translateY(1px)}
 .sr-only,.skip-link:not(:focus){position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .skip-link:focus{position:fixed;left:16px;top:12px;z-index:60;padding:10px 16px;background:var(--badge-gold);color:#16161f}
-.top-bar{height:52px;position:fixed;inset:0 0 auto;display:flex;align-items:center;background:var(--top);border-bottom:1px solid var(--line);z-index:var(--layer-toolbar);padding:0 12px;gap:10px}
+.top-bar{height:52px;position:fixed;inset:0 0 auto;display:flex;align-items:center;background:var(--top);border-bottom:1px solid var(--line);z-index:var(--layer-menu);padding:0 12px;gap:10px}
 .brand{display:flex;align-items:center;width:122px;flex:none}
 .brand img{object-fit:contain}
 .game-navigation{display:flex;align-items:center;gap:7px;min-width:0;height:100%;overflow:hidden}
@@ -36,11 +36,13 @@ button:not(.icon-button):active,.gold-button:active{transform:translateY(1px)}
 .more-games-button{background:transparent;font-size:18px;letter-spacing:1px;width:32px}
 .more-games-wrap,.set-menu-wrap,.settings-wrap{position:relative}
 .dropdown{position:absolute;top:calc(100% + 12px);background:var(--surface);box-shadow:0 6px 12px #0006;border-radius:6px;padding:12px;z-index:var(--layer-menu);font-size:13px;min-width:230px}
-.more-games{left:0;display:grid;grid-template-columns:1fr 1fr;gap:4px;width:350px}
-.more-games .game-link{font-size:12px}
+.more-games{right:0;left:auto;display:flex;flex-direction:column;gap:4px;width:280px;min-width:0;max-width:calc(100vw - 24px);padding:8px}
+.more-games a{display:flex;align-items:center;min-height:38px;padding:8px 10px;border-radius:4px;font-size:12px;line-height:1.5}
+.more-games a:hover{background:var(--hover-surface)}
 .gamebase-link{align-self:stretch;margin-left:auto;padding-left:20px;border-left:1px solid #1c1c28;display:flex;align-items:center;justify-content:center;gap:8px;color:var(--muted);font-size:13px;white-space:nowrap;min-width:255px}
 .gamebase-link:hover{color:#fff}
 .toolbar{height:60px;position:fixed;inset:52px 0 auto;display:flex;align-items:center;gap:8px;padding:10px 12px;background:#191926;border-bottom:1px solid #292939;z-index:var(--layer-toolbar)}
+.top-bar:has(.dropdown:not([hidden])),.toolbar:has(.dropdown:not([hidden])){z-index:var(--layer-popover)}
 .set-button{background:#282535 url('assets/tft/images/set-backgrounds/set-18-enchanted-wilds.png') center/cover;display:flex;align-items:center;gap:12px;justify-content:space-between;height:34px;min-width:90px;padding:0 10px;border-radius:4px;font-size:12px;font-weight:700}
 .set-menu{left:0;display:flex;flex-direction:column;gap:8px}
 .dropdown a{color:var(--gold)}

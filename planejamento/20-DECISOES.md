@@ -1,5 +1,11 @@
 # Registro de decisões
 
+## D068 — Menu dos três pontos acima da navegação e do overlay
+
+Usuário relatou menu vazio/cortado. QA em produção confirmou aria-expanded=true, mas elementFromPoint no centro do painel atingia a toolbar: ambas as barras estavam na camada 30, com a segunda pintada depois. Cabeçalho sobe à camada de menu; qualquer barra com dropdown aberto usa o token layer-popover 70 para ficar também acima do overlay flutuante 60. Fechar restaura a camada normal. Opções passam a uma coluna de 280 px, alinhada à direita do botão e limitada ao viewport.
+
+Links dos dropdowns agora fecham o painel ao serem selecionados. Escape com retorno de foco, clique fora e exclusão mútua preservados. QA local confirmou ambos os links atingíveis com overlay sobreposto, navegação para #sources, painel fechado/aria-expanded=false após seleção e foco restaurado com Escape. Sintaxe de 96 arquivos e 182/182 testes aprovados; extensão e snapshot inalterados.
+
 ## D067 — Layout da home definido antes do primeiro conteúdo
 
 Usuário relatou flash do aside “Dados do jogo / Guia rápido” ao abrir ou recarregar a página. A classe is-home só era aplicada por setVisible depois de loadGameData/report, deixando o primeiro desenho com grid e coluna de 334 px. index.html agora entrega o body com o estado padrão da home e ajusta a classe por hash em um script síncrono antes do conteúdo. CSS, renderização de rotas, navegação e painéis das demais telas preservados; não há ocultação da página inteira, timeout ou requisição adicional.

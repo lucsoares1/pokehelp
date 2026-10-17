@@ -12,6 +12,7 @@ export function wireShell() {
   const dropdowns=[['#more-games-button','#more-games'],['#set-button','#set-menu'],['#settings-button','#settings-menu']];
   const close=(except)=>dropdowns.forEach(([button,panel])=>{if(panel!==except){$(panel).hidden=true;$(button).setAttribute('aria-expanded','false');}});
   dropdowns.forEach(([button,panel])=>$(button).addEventListener('click',()=>{const open=$(panel).hidden;close(panel);$(panel).hidden=!open;$(button).setAttribute('aria-expanded',String(open));}));
+  dropdowns.forEach(([,panel])=>$(panel).addEventListener('click',event=>{if(event.target.closest('a[href]'))close();}));
   document.addEventListener('click',e=>{if(!dropdowns.some(([b,p])=>$(b).contains(e.target)||$(p).contains(e.target)))close();});
   document.addEventListener('keydown',e=>{if(e.key==='Escape'){const active=dropdowns.find(([,p])=>!$(p).hidden);close();if(active)$(active[0]).focus();if(sidebar.classList.contains('is-open'))menu(false);if($('.page-search').classList.contains('is-mobile-open')){$('.page-search').classList.remove('is-mobile-open');$('#mobile-search-button').focus();}}});
   function panels(hidden){document.body.classList.toggle('hide-ad-spaces',hidden);$('#hide-ad-spaces').checked=hidden;}

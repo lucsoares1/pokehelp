@@ -1,5 +1,11 @@
 # Status do PokeChess Helper
 
+## Menu dos três pontos — D068
+
+Corrigida sobreposição: painel aparecia atrás da toolbar. Cabeçalho e dropdown aberto usam camadas apropriadas, inclusive acima do overlay do Helper; ao fechar, o cabeçalho retorna à camada normal. Opções em coluna, com área clicável e largura limitada à tela. Selecionar link fecha o menu; Escape retorna o foco ao botão.
+
+QA reproduziu o defeito na Vercel e validou localmente links clicáveis, seleção de Fontes e créditos, aria-expanded e Escape com overlay sobreposto. Sintaxe 96 arquivos, 182/182 testes. Sem alteração de dados ou versão da extensão.
+
 ## Flash do aside na abertura da home — D067
 
 Corrigido no HTML inicial, antes de aguardar módulos/dados: body começa em is-home e um script síncrono anterior ao conteúdo respeita a rota do hash. Home passa a iniciar com layout de largura inteira e aside oculto; demais rotas mantêm o layout existente. Não esconde o documento nem adiciona temporizador/requisição.
